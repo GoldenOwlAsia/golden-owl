@@ -11,6 +11,7 @@ html
       .row
         .col-lg-12.inner-container
           = render "layouts/header"
+          = render partial: "home/flash_messages", flash: flash
       .row 
         .col-lg-12
           = yield
