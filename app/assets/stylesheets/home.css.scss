@@ -345,28 +345,6 @@ textarea {
   border-color: orangered;
 }
 
-.team-section {
-  @extend .base-section;
-  background: #FF4C00;
-  .img-circle {
-    height: 250px;
-    width: 250px;
-  }
-  .team-content{
-    color:white;
-    h3{
-      font-size: 25px;
-    }
-    p{
-      font-size: 15px;
-    }
-    div{
-      font-size: 15px;
-      padding-top: 30px;
-    }
-  }
-}
-
 .contact-section {
   @extend .base-section;
   background: #fff;
@@ -406,3 +384,70 @@ textarea {
     font-size: 35px
   }
 }
+//TEAM SECTION
+
+.team-section {
+  background-image: url("#{asset_path('bg-work.jpg')}");
+  height: 600px;
+  .content{
+      padding-top: 80px;
+      .team-title{
+          color: #181818;
+          padding-left: 3px;
+          margin-bottom: 80px;
+          span{
+            border-top: 1px solid #181818;
+            border-bottom: 1px solid #181818;
+          }
+      }
+      .team-img{
+        float: left;
+        transition: 0.1s;
+        img{
+          width: 300px; 
+          height: 300px;
+          margin-bottom: 9px;
+          text-align: center;
+        }
+      }
+    }
+      .team-text-l{
+        margin-top: 20px;
+        margin-left: 213px;
+        text-align: center;
+        h4{
+            color: #181818;
+            font-size: 26px;
+            font-weight: bold;
+          }
+          p{
+            color: #181818;
+            font-size: 14px;  
+            font-style: oblique;
+          }
+          div{
+            color: #181818;
+            font-size: 12px;
+          }
+      }
+      .team-text-r{
+        margin-top: 20px;
+        margin-left: -175px;
+        text-align: center;
+        h4{
+            color: #181818;
+            font-size: 26px;
+            font-weight: bold;
+          }
+          p{
+            color: #181818;
+            font-size: 14px;  
+            font-style: oblique;
+          }
+          div{
+            color: #181818;
+            font-size: 12px;
+          }
+      }
+    }
+
