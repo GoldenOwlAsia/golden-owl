@@ -73,6 +73,28 @@
         }
       }
     }
+    .subcribe{
+      margin-top: 20px;
+      input#inputlg.form-control.input-lg{
+        color: white;
+        width: 400px;
+        padding: 20px;
+        background: white;
+        margin-top: 5px;
+        width: 100%;
+      }
+      button{
+        color: white;
+        width: 200px;
+        text-align: center;
+        width: 35%;
+        background-color: #f7c31b;
+        text-shadow: 25px;
+        padding: 15px;
+        text-decoration-color: white;
+        margin: 10px 0 0 0;
+      }
+    }
 
     .mostviewpost{
       background-color: white;
@@ -88,22 +110,7 @@
         height: 80px;
         vertical-align: bottom;
       }
-      .subcribe{
-        input#inputlg.form-control.input-lg{
-          background-color: rgba(0,0,0,0.1);
-          color: white;
-          width: 400px;
-          padding: 20px;
-        }
-        button{
-              width: 200px;
-              text-align: center;
-              width: 35%;
-              text-shadow: 25px;
-              padding: 15px;
-              margin-top: 10px;
-        }
-      }
+
       .content_mostview{
         display: inline-block;
         text-align: center;
