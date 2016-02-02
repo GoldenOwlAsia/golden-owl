@@ -39,38 +39,23 @@
   .col-lg-4.no-padding
     .mostviewpost
       // this is mostview
+
       h3 Most View
-      = image_tag asset_path('voluntee1.png')
-      .content_mostview.no-padding
-        = link_to 'detail.html', :title => "http://localhost:3000/blogpage/details" do
-          h4 Time To Work Social
-        end
-        ul.no-padding
-          li
-            = image_tag asset_path('calendar.png'), :class => "logo"
-          li
-            p 02 Jan 2016
-          li
-            = image_tag asset_path('comment.png'), :class => "logo"
-          li
-            p 2 comments
-
-      = image_tag asset_path('voluntee1.png')
-      .content_mostview.no-padding
-        = link_to 'detail.html', :title => "http://localhost:3000/blogpage/details" do
-          h4 Time To Work Social
-        end
-        ul.no-padding
-          li
-            = image_tag asset_path('calendar.png'), :class => "logo"
-          li
-            p 02 Jan 2016
-          li
-            = image_tag asset_path('comment.png'), :class => "logo"
-          li
-            p 2 comments
-
-
+      - 3.times do
+        = image_tag asset_path('voluntee1.png')
+        .content_mostview.no-padding
+          = link_to 'detail.html', :title => "http://localhost:3000/blogpage/details" do
+            h4 Time To Work Social
+          end
+          ul.no-padding
+            li
+              = image_tag asset_path('calendar.png'), :class => "logo"
+            li
+              p 02 Jan 2016
+            li
+              = image_tag asset_path('comment.png'), :class => "logo"
+            li
+              p 2 comments
 
   //another raw
   .col-lg-4.no-padding
