@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Slim
 gem 'slim', '~> 3.0.6'
-# bootstrap 
+# bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
 # fa-icon
 gem 'font-awesome-sass', '~> 4.4.0'
@@ -52,3 +52,4 @@ group :development do
 end
 
 gem 'rails_12factor', group: :production
+gem 'devise'

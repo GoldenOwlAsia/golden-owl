@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :contacts
   resources :contacts
   resources :contacts
   get 'home/home'
-
+  get 'blogpage/index'
   get 'home/about'
+  resources :posts, module: 'blogpage'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

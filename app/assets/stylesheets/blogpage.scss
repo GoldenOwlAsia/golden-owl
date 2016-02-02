@@ -1,0 +1,183 @@
+// Place all the styles related to the blogpage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.latestpost-section{
+  .content{
+
+    background-color: white;
+    .latest-post{
+      padding: 20px;
+      img{
+        height: 400px;
+        width: 100%
+      }
+      h3{
+        font-weight: bold;
+        &:hover{
+          color: #3a3a3a;
+          border-radius: #0080ff;
+        }
+      }
+      ul{
+        li{
+          padding: 5px;
+          display: inline;
+          list-style-type: none;
+          p{
+            display: inline-block;
+          }
+          img{
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .category-tree{
+    }
+  }
+}
+.mostview-section{
+  .content{
+    .latestspost{
+      background-color: white;
+      height: 600px;
+      padding: 20px;
+      img{
+        height: 300px;
+        width: 100%
+      }
+      .content{
+        padding: 20px !important;
+        border: 1px solid #ebebeb;
+        h3{
+          font-weight: bold;
+          &:hover{
+            color: #3a3a3a;
+            border-radius: #0080ff;
+          }
+        }
+        ul{
+          li{
+            padding: 5px;
+            display: inline;
+            list-style-type: none;
+            p{
+              display: inline-block;
+            }
+            img{
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .mostviewpost{
+      background-color: white;
+      height: 600px;
+      border: 1px solid #ebebeb;
+      padding: 20px !important;
+      margin-top: 10px;
+      h3{
+        font-weight: bold;
+        padding: 0 0 50px;
+      }
+      img{
+        height: 80px;
+        vertical-align: bottom;
+      }
+      .subcribe{
+        input#inputlg.form-control.input-lg{
+          background-color: rgba(0,0,0,0.1);
+          color: white;
+          width: 400px;
+          padding: 20px;
+        }
+        button{
+              width: 200px;
+              text-align: center;
+              width: 35%;
+              text-shadow: 25px;
+              padding: 15px;
+              margin-top: 10px;
+        }
+      }
+      .content_mostview{
+        display: inline-block;
+        text-align: center;
+        h4{
+          font-weight: bold;
+          &:hover{
+            color: #3a3a3a;
+            border-radius: #0080ff;
+          }
+        }
+
+        ul{
+          li{
+            padding: 5px;
+            display: inline;
+            list-style-type: none;
+            p{
+              display: inline-block;
+            }
+            img{
+              vertical-align: middle;
+              width: 10px;
+              height:10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.no-padding{
+  padding: 0px !important;
+}
+
+//blue button
+.btn-readmore{
+  outline: none;
+  background:#0080ff;
+  text-align:center;
+  cursor:pointer;
+  color:#Fff;
+  margin:5px 0;
+  float:left;
+  border:1px;
+  padding:5px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  font:bold 11px sans-serif;
+  &:hover{
+    background:#FFf;
+    font:bold 11px sans-serif;
+    color:#0080ff;
+    border:3px dotted #ddd;
+  }
+
+  a {
+    color:#fff;
+    text-decoration:none;
+    &:hover {
+      color:#fff;
+      text-decoration:none;
+    }
+  }
+}
+.footer_demo-section{
+  .content{
+    height: 200px;
+    padding: 50px;
+
+  }
+}
+.nav-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+

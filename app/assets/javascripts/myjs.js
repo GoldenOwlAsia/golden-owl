@@ -12,16 +12,15 @@ $('document').ready(function() {
     var current_menu = $('.menu-content > li:nth-child(1) > .inside');
     var numService = $('.service-row').size();
 
-
     //Set height auto for slider
     var heightSlider = $('.image:nth-child(1)').height();
     $('.slider').css('height', heightSlider + 'px');
 
     //Auto slider
-    var autoNext = setInterval(setAuto,10000); 
+    var autoNext = setInterval(setAuto,10000);
     $('.image-slider > .image:nth-child(1) > img').css({'transform':'scale(1)','opacity':'0.4'});
 
-    
+
     //Scroll
     $(window).scroll(function(){
 
@@ -45,7 +44,7 @@ $('document').ready(function() {
       var top = header + $(this).scrollTop();
       var mql = window.matchMedia("screen and (min-width: 861px)");
       if(mql.matches){
-        if (top > $('.service-row').offset().top){ 
+        if (top > $('.service-row').offset().top){
           animateService_01();
         }
       }else {
@@ -57,7 +56,7 @@ $('document').ready(function() {
           }
         }
       }
-      
+
       //Check to see if the window is top if not then display button
       if ($(this).scrollTop() > 0) {
          $('.scrollToTop').fadeIn();
@@ -81,7 +80,7 @@ $('document').ready(function() {
       $('.menu-content').slideToggle();
     });
 
-    
+
     //Navigation
     $('.menu-content > li').click(function(){
       var index = $(this).attr('id');
@@ -144,5 +143,11 @@ $('document').ready(function() {
       $('.service-row:nth-child(4) > .text-service').delay(4500).animate({'opacity':'1'}, 500);
     }
 
+
+});
+$('document').ready(function() {
+  $('label.tree-toggler').click(function () {
+    $(this).parent().children('ul.tree').toggle(300);
+  });
 });
 
