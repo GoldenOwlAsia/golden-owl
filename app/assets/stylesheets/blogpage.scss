@@ -1,9 +1,156 @@
 // Place all the styles related to the blogpage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "font-awesome";
+
+.navigate-section{
+  position: static;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  z-index: 2;
+  .content{
+    padding: 10px;
+    .category{
+      list-style: none;
+      margin: 10px 10px 5px 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      p{
+        color: #09c;
+        background: #fff;
+        padding-left: 20px;
+        font: 30px VNFQuicksandRegular,sans-serif;
+      }
+      ul {
+        float: right;
+        li{
+          padding: 20px;
+          display: inline-block;
+           .blog,.ror, .sharing, .fontend{
+            display: none;
+          }
+          &:nth-child(1):hover {
+            color: #09c;
+          }
+          &:nth-child(2):hover {
+            color: #09c;
+          }
+          &:nth-child(3):hover {
+            color: #09c;
+          }
+          &:nth-child(4):hover {
+            color: #09c;
+          }
+          &:nth-child(1):hover ~ li > .blog{
+            display: block;
+          }
+          &:nth-child(2):hover ~ li > .sharing{
+            display: block;
+          }
+          &:nth-child(3):hover ~ li > .fontend{
+            display: block;
+          }
+          &:nth-child(4):hover ~ li > .ror{
+            display: block;
+          }
+
+        //   .i-1:hover  ~ .blog {
+        //    display: block;
+        //   }
+        //   .i-2:hover  ~ .sharing{
+        //    display: block;
+        //   }
+        //   .i-3:hover  ~ .fontend{
+        //    display: block;
+        //   }
+        //   .i-4:hover  ~ .ror{
+        //    display: block;
+        //   }
+        }
+        li:nth-child(5){
+          width: 150px;
+        }
+      }
+    }
+    .logo{
+      float: left;
+      margin-left: 20px;
+      margin-top: 10px;
+      img{
+        width: 60px;
+        height: 60px;
+        float: left;
+      }
+      .title{
+        float: left;
+        margin-left: 8px;
+        h1{
+          text-align: left !important;
+          margin-bottom: 5px;
+          color: #f7c31b;
+          font-size: 25px;
+          margin-top: 8px;
+          text-transform: uppercase;
+        }
+        h2{
+          margin-top: 0px;
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .searchbox{
+      margin-left: 50px;
+      padding: 10px;
+      display: inline-block;
+      #search input[type="text"] {
+        background: url(search-dark.png) no-repeat 10px 6px #444;
+        border: 0 none;
+        font: bold 12px Arial,Helvetica,Sans-serif;
+        color: #777;
+        width: 300px;
+        padding: 6px 15px 6px 35px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+        -webkit-transition: all 0.7s ease 0s;
+        -moz-transition: all 0.7s ease 0s;
+        -o-transition: all 0.7s ease 0s;
+        transition: all 0.7s ease 0s;
+        outline: none;
+      }
+
+
+      // #search input[type="text"]:focus {
+      //   width: 320px;
+      //   border: 1px solid #0080ff;
+      // }
+    }
+    .lang{
+
+      a{
+        padding: 10px;
+      }
+      float: right;
+      font-size: 36px;
+      margin-left: 20px;
+      margin-top: 10px;
+      display: inline-block;
+      color: #c5c5c5;
+      font-weight: 700;
+    }
+
+  }
+}
 .latestpost-section{
   .content{
-
+    /*
     background-color: white;
     .latest-post{
       padding: 20px;
@@ -34,7 +181,93 @@
       }
     }
     .category-tree{
+    }*/
+    .title{
+      margin-left: 20px;
+      background-color: #484848;
+      height: 275px;
+      margin-top: 0px;
+      padding: 20px 0 0 20px;
+      h3{
+        font: 40px VNFQuicksandRegular,sans-serif;
+        text-align: left;
+        color: white;
+        border-bottom: 3px solid #5390f5;
+        width: 100px;
+        margin-top: 0px;
+      }
     }
+    .secondblog{
+      float: left;
+      padding: 20px 0px 0 20px;
+      position: relative;
+      overflow: hidden;
+      img{
+        border: 1px solid #ebebeb;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        z-index: 0;
+      }
+      h4{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 0px;
+        margin: 60px 0px 0 20px;
+        position: absolute;
+        text-align: center;
+        color: wheat;
+        top: 200px;
+        left: 0;
+        width: 100%;
+      }
+    }
+    .blogs{
+      float: left;
+      padding: 20px 0px 0 20px;
+      width: 25%;
+      position: relative;
+      overflow: hidden;
+      img{
+        border: 1px solid #ebebeb;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        z-index: 0;
+      }
+      h4{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 0px;
+        margin: 60px 0px 0 20px;
+        position: absolute;
+        text-align: center;
+        color: wheat;
+        top: 200px;
+        left: 0;
+        width: 100%;
+      }
+    }
+    .firstblog{
+      padding: 0px 20px 0 20px;
+      img{
+        border: 1px solid #ebebeb;
+        position: relative;
+        width: 100%;
+        height: 600px;
+      }
+      h4{
+        background-color:rgba(0,0,0,0.5);
+        padding: 20px;
+        margin: 341px 35px 0 23px;
+        text-align: center;
+        color: wheat;
+         position: absolute;
+         top: 200px;
+         left: 0;
+         width: 920px;
+      }
+
+    }
+
   }
 }
 .mostview-section{
@@ -76,12 +309,12 @@
     .subcribe{
       margin-top: 20px;
       input#inputlg.form-control.input-lg{
-        color: white;
-        width: 400px;
-        padding: 20px;
-        background: white;
-        margin-top: 5px;
-        width: 100%;
+      color: white;
+      width: 400px;
+      padding: 20px;
+      background: white;
+      margin-top: 5px;
+      width: 100%;
       }
       button{
         color: white;
@@ -141,9 +374,6 @@
     }
   }
 }
-.no-padding{
-  padding: 0px !important;
-}
 
 //blue button
 .btn-readmore{
@@ -187,4 +417,12 @@
   padding-left: 15px;
   margin-bottom: 0;
 }
+
+.no-padding{
+  padding: 0px !important;
+}
+.no-margin{
+  margin: 0px !important;
+}
+
 

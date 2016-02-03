@@ -1,4 +1,4 @@
-.content.no-padding
+/*.content.no-padding
   .col-lg-8.no-padding
     .latest-post
       //this is latest post
@@ -71,7 +71,23 @@
                   li
                     a href="#"  Link
                   li
-                    a href="#"  Link
+                    a href="#"  Link */
+.content
+  .col-lg-3.no-padding
+    .title
+      h3 Sharing
+    .secondblog
+      = image_tag asset_path('blog-img.png')
+      h4 This is blog
+  .col-lg-9.no-padding
+    .firstblog
+      = image_tag asset_path('blog-img.png')
+      h4  This is blog
+
+  -12.times do
+    .blogs
+      = image_tag asset_path('blog-img.png')
+      h4 This is blog
 
 
 

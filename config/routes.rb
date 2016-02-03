@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :contacts
   get 'home/home'
   get 'blogpage/index'
+  get 'blogpage/detail'
   get 'home/about'
   resources :posts, module: 'blogpage'
 

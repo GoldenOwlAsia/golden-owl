@@ -1,0 +1,77 @@
+.content.no-padding
+  .col-lg-8.no-padding
+    .latest-post
+      //this is latest post
+      = image_tag asset_path('blog-img.png')
+      = link_to 'detail.html', :title => "http://localhost:3000/blogpage/details" do
+        h3 Time To Work Social
+      end
+      ul.no-padding
+        li
+          = image_tag asset_path('calendar.png'), :class => "logo"
+        li
+          p 02 Jan 2016
+        li
+          = image_tag asset_path('comment.png'), :class => "logo"
+        li
+          p 2 comments
+
+      p In the first chapter we discussed how to build communities. Many of the communities you can build online are social media communities. In this chapter, we’re going to discuss some key ways you can build traffic to your blog once you have your social media communities established. Most people assume that social media sharing is easy. Yet many blog owners find that it requires quite a bit of effort to do more than share every blog post on social media. We’ll show you tactics that will allow you to get the most out your efforts to market your blog posts on social media These are tactics that have worked to help build some of the biggest blogs on the Internet. his gets your new blog post shared with your audience multiple times so that the most people have the most opportunity to see it. Yet your posts will appear unique because you’re changing the title each time. And as you share more posts you’ll see the titles that work best with your audience.
+        For the other updates you can schedule with Buffer you’ll share old posts using the same title tactics, but we’ll talk about this in the next section on re-posting blog content.
+      button.btn-readmore Continue reading...
+  // this is catagory tree
+  .col-lg-4
+    .category-tree
+      h2 Category
+      .well.well-lg
+        ul.nav
+          li
+            label.tree-toggler.nav-header label-default=""  Romantic
+            ul.nav.tree.active-trial
+              li
+                a href="#"  Felling
+              li
+                a href="#"  Story
+              li.nav-divider
+              li
+                label.tree-toggler.nav-header label-default=""  Passion
+                ul.nav.tree.active-trial
+                  li
+                    a href="#"  Natural
+                  li
+                    a href="#"  DailyLife
+                  li.nav-divider
+                  li
+                    label.tree-toggler.nav-header label-default=""  Love
+                    ul.nav.tree
+                      li
+                        a href="#"  Link
+                      li
+                        a href="#"  Link
+          li.nav-divider
+          li
+            label.tree-toggler.nav-header label-default=""  Funny
+            ul.nav.tree
+              li
+                a href="#"  Link
+              li
+                a href="#"  Link
+          li.nav-divider
+          li
+            label.tree-toggler.nav-header label-default=""  Sport
+            ul.nav.tree
+              li
+                a href="#"  Link
+              li
+                a href="#"  Link
+              li.nav-divider
+              li
+                label.tree-toggler.nav-header label-default=""  Football
+                ul.nav.tree
+                  li
+                    a href="#"  Link
+                  li
+                    a href="#"  Link
+
+
+

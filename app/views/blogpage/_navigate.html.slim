@@ -1,0 +1,37 @@
+.content
+  .logo
+    = image_tag 'logo.png', :alt => "Golden Owl Consulting"
+    .title
+      h1 Golden
+      h2 Owl Consulting
+  .category
+    ul
+      li
+        .i-1
+          i class="fa fa-pencil fa-3x"
+      li
+        .i-2
+          i class="fa fa-heart-o fa-3x"
+      li
+        .i-3
+          i class="fa fa-mobile fa-3x"
+      li
+        .i-4
+          i class="fa fa-diamond fa-3x"
+      li
+        .blog
+          p Blog
+        .sharing
+          p Sharing
+        .fontend
+          p Fontend
+        .ror
+          p RoR
+      li
+        .searchbox
+          form#search action="/search" method="get"
+            input name="q" placeholder="Search..." type="text"
+        .lang
+          =link_to "E", root_path
+          =link_to "V", root_path
+
