@@ -4,6 +4,34 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+
+
+}
+#user_remember_me{
+  float: left;
+  color: white;
+  height: 13px;
+  width: 2%
+
+}
+.body-content{
+  padding: 50px;
+  input{
+    display: block;
+    width: 50%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  div.actions{
+      width: 20%;
+    }
 }
 
 p, ol, ul, td {
@@ -17,14 +45,21 @@ pre {
   padding: 10px;
   font-size: 11px;
 }
-
+.animate {
+  transition: all 0.3s;
+}
 a {
-  color: #000;
-
-  &:visited {
-    color: #666;
+  .btn {
+    display: inline-block;
+    line-height: 35px;
+    margin: 8px;
+    padding: 0 15px;
+    font-size: 15px;
+    position: relative;
+    opacity: .999;
+    border-radius: 3px;
+    @extend .animate;
   }
-
   &:hover {
     color: #fff;
     background-color: #000;

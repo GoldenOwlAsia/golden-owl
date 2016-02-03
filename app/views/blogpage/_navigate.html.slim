@@ -31,7 +31,17 @@
         .searchbox
           form#search action="/search" method="get"
             input name="q" placeholder="Search..." type="text"
-        .lang
-          =link_to "E", root_path
-          =link_to "V", root_path
+        // .lang
+        //   =link_to "E", root_path
+        //   =link_to "V", root_path
+      li
+        .user
+          // = button_to  "Login",new_user_session_path,:class =>"btn btn-purple btn-border-rev"
+          // button.btn.btn-purple.btn-border-rev Chao
+          - if user_signed_in?
+            = link_to current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
+            = link_to "Logout", destroy_user_session_path, :class => "btn btn-blue btn-border-rev", :method => :delete
+          - else
+            = link_to "Sign In", new_user_registration_path, :class => "btn btn-purple btn-border-rev"
+            = link_to "Login", new_user_session_path, :class => "btn btn-blue btn-border-rev"
 
