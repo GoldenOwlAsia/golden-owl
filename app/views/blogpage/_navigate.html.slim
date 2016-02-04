@@ -7,17 +7,13 @@
   .category
     ul
       li
-        .i-1
-          i class="fa fa-pencil fa-3x"
+        i class="fa fa-pencil fa-3x"
       li
-        .i-2
-          i class="fa fa-heart-o fa-3x"
+        i class="fa fa-heart-o fa-3x"
       li
-        .i-3
-          i class="fa fa-mobile fa-3x"
+        i class="fa fa-mobile fa-3x"
       li
-        .i-4
-          i class="fa fa-diamond fa-3x"
+        i class="fa fa-diamond fa-3x"
       li
         .blog
           p Blog
@@ -27,21 +23,20 @@
           p Fontend
         .ror
           p RoR
-      li
-        .searchbox
-          form#search action="/search" method="get"
-            input name="q" placeholder="Search..." type="text"
+      // li
+      //   .searchbox
+      //     form#search action="/search" method="get"
+      //       input name="q" placeholder="Search..." type="text"
         // .lang
         //   =link_to "E", root_path
         //   =link_to "V", root_path
-      li
-        .user
-          // = button_to  "Login",new_user_session_path,:class =>"btn btn-purple btn-border-rev"
-          // button.btn.btn-purple.btn-border-rev Chao
-          - if user_signed_in?
-            = link_to current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
-            = link_to "Logout", destroy_user_session_path, :class => "btn btn-blue btn-border-rev", :method => :delete
-          - else
-            = link_to "Sign In", new_user_registration_path, :class => "btn btn-purple btn-border-rev"
-            = link_to "Login", new_user_session_path, :class => "btn btn-blue btn-border-rev"
+      // = button_to  "Login",new_user_session_path,:class =>"btn btn-purple btn-border-rev"
+      // button.btn.btn-purple.btn-border-rev Chao
+      .user
+        - if user_signed_in?
+          = link_to current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
+          = link_to "Logout", destroy_user_session_path, :class => "btn btn-blue btn-border-rev", :method => :delete
+        - else
+          = link_to "Sign In", new_user_registration_path, :class => "btn btn-purple btn-border-rev"
+          = link_to "Login", new_user_session_path, :class => "btn btn-blue btn-border-rev"
 

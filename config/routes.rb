@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, :controllers => { :sessions => 'users/sessions' }, :path_prefix => ''
+  # scope "/admin" do
+  #   resources :users
+  # end
+  namespace :admin do
+    resources :users
+  end
   resources :contacts
   resources :contacts
   resources :contacts

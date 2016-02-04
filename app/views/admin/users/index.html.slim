@@ -1,0 +1,31 @@
+- if current_user.user_type == "admin"
+  .content-admin
+    title Admin
+    h3 Welcome To Admin User Pages
+    .header_table
+      ul
+        li Email
+        li Create at
+        li Type
+        li Sign in times
+
+    .users
+      ul
+        - @users.each do |user|
+          li  #{user.email}
+          li  #{user.created_at.strftime("%B #{user.created_at.day.ordinalize}, %Y")}
+          li  #{user.user_type}
+          li  #{user.sign_in_count}
+          li
+            = link_to 'Show', edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
+          li
+            = link_to 'Edit', edit_user_registration_path, :class => "btn btn-blue btn-border-rev"
+          li
+            = link_to 'Destroy',cancel_user_registration_path, method: :delete, confirm: 'Are you sure?', :class => "btn btn-red btn-border-rev"
+          br
+
+    = link_to 'Create New User', user_registration_path, :class => "btn btn-blue btn-border-rev"
+- else
+  .content-admin
+    h3 Oop! Sory you don't have permittion to see this page.
+    = link_to 'Return Home', root_path, :class => "btn btn-purple btn-border-rev"

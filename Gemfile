@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Slim
 gem 'slim', '~> 3.0.6'
 # bootstrap
-gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'bootstrap-sass', '~> 3.3.5'
 # fa-icon
 gem 'font-awesome-sass', '~> 4.4.0'

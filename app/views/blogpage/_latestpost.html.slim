@@ -73,6 +73,9 @@
                   li
                     a href="#"  Link */
 .content
+  // .searchbox
+  //   form#search action="/search" method="get"
+  //     input name="q" placeholder="Search..." type="text"
   .col-lg-3.no-padding
     .title
       h3 Sharing
@@ -84,10 +87,27 @@
       = image_tag asset_path('blog-img.png')
       h4  This is blog
 
-  -12.times do
+  .navigation
+    ul
+      li
+        h3 Most View
+        p Top blog of sharing category
+
+  -8.times do
     .blogs
       = image_tag asset_path('blog-img.png')
       h4 This is blog
+
+  .navigation
+    ul
+      li
+        h3 Newest
+        p Recents blog of sharing category
+  -8.times do
+    .blogs
+      = image_tag asset_path('blog-img.png')
+      h4 This is blog
+
 
 
 
