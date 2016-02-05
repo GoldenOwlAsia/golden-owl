@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  devise_for :users, :controllers => { :sessions => 'users/sessions' }, :path_prefix => ''
+  devise_for :users, :controllers => { :sessions => 'users/sessions', registrations: 'registrations' }, :path_prefix => ''
   # scope "/admin" do
   #   resources :users
   # end
+  resources :users
   namespace :admin do
     resources :users
   end

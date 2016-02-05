@@ -1,0 +1,37 @@
+.container
+  .row.profile
+    .col-md-3
+      .profile-sidebar
+        // SIDEBAR USERPIC
+        .profile-userpic
+        img src= "#{@user.avatar.to_s}"
+        //USER TITLE
+        .profile-usertitle
+          .profile-usertitle-name
+            | #{@user.username}
+          .profile-usertitle-job
+            | Developer
+        // SIDEBAR BUTTONS
+        .profile-userbuttons
+          button.btn.btn-success.btn-sm type="button"  Follow
+          button.btn.btn-danger.btn-sm type="button"  Message
+        // MENU
+        .profile-usermenu
+          ul.nav
+            li.active
+              = link_to "Overview", edit_user_registration_path, :class => "glyphicon glyphicon-home"
+            li
+              = link_to "Account Settings", edit_user_registration_path, :class => "glyphicon glyphicon-user"
+            li
+              a href="#" target="_blank"
+                i.glyphicon.glyphicon-ok
+                | Tasks
+            li
+              a href="#"
+                i.glyphicon.glyphicon-flag
+                | Help
+
+    .col-md-9
+      .profile-content
+        | Some blog relate here...
+

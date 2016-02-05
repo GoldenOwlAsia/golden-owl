@@ -9,7 +9,7 @@ class UsersController < ApplicationController
       params[:user].delete(:password_confirmation)
     end
   end
-  def show(userid)
-
+  def show
+    @user = User.find(params[:id])
   end
 end

@@ -34,6 +34,7 @@
       // button.btn.btn-purple.btn-border-rev Chao
       .user
         - if user_signed_in?
+          <li><%= link_to "Profile", current_user %></li>
           = link_to current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
           = link_to "Logout", destroy_user_session_path, :class => "btn btn-blue btn-border-rev", :method => :delete
         - else
