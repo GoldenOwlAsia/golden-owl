@@ -4,7 +4,10 @@
       .profile-sidebar
         // SIDEBAR USERPIC
         .profile-userpic
-        img src= "#{@user.avatar.to_s}"
+          - if @user.avatar.blank?
+            =image_tag('#{@user.avatar}')
+          - else
+            =image_tag('avatar-empty.png')
         //USER TITLE
         .profile-usertitle
           .profile-usertitle-name

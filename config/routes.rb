@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   devise_for :users, :controllers => { :sessions => 'users/sessions', registrations: 'registrations' }, :path_prefix => ''
   # scope "/admin" do
   #   resources :users
@@ -9,13 +10,17 @@ Rails.application.routes.draw do
     resources :users
   end
   resources :contacts
-  resources :contacts
-  resources :contacts
+
   get 'home/home'
-  get 'blogpage/index'
-  get 'blogpage/detail'
   get 'home/about'
-  resources :posts, module: 'blogpage'
+  resources :blog do
+    get 'index', on: :collection
+    get 'detail', on: :collection
+  end
+  resources :posts
+  namespace :blog do
+    resources :posts
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
