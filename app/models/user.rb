@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   enum user_type: {admin: 1, user: 0}
   mount_uploader :avatar, AvatarUploader
+  has_many :posts, dependent: :destroy
 end

@@ -1,6 +1,6 @@
-class Blog::PostsController < ApplicationController
+class Blogs::PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
+  before_action:authenticate_user!
   # GET /posts
   # GET /posts.json
   def index
@@ -10,11 +10,17 @@ class Blog::PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find_by_id(params[:id])
+    @post.view += 1
+    @post.save!
+    @seo_name = @post.title
+
+
   end
 
   # GET /posts/new
   def new
-    @post = Post.new
+      @post = current_user.posts.build
   end
 
   # GET /posts/1/edit
@@ -24,11 +30,11 @@ class Blog::PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
-
+    @post = current_user.posts.build(post_params)
+    @post.view = 0
     respond_to do |format|
       if @post.save
-        format.html { redirect_to blog_post_path(@post), notice: 'Post was successfully created.' }
+        format.html { redirect_to blogs_post_detail_path(@post.title.to_url, @post.id), notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
@@ -42,7 +48,7 @@ class Blog::PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to blog_post_path(@post), notice: 'Post was successfully updated.' }
+        format.html { redirect_to blogs_post_path(@post), notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
@@ -69,6 +75,6 @@ class Blog::PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title, :body, :picture, :view)
     end
 end

@@ -1,0 +1,39 @@
+.content
+  // .searchbox
+  //   form#search action="/search" method="get"
+  //     input name="q" placeholder="Search..." type="text"
+  .col-lg-3.no-padding
+    .title
+      h3 Sharing
+    .secondblog
+      = image_tag(@posts.last.picture)
+      h4 #{@posts.last.title}
+  .col-lg-9.no-padding
+    .firstblog
+      = image_tag(@posts.last.picture)
+      h4 #{@posts.last.title}
+
+  .navigation
+    ul
+      li
+        h3 Most View
+        p Top blog of sharing category
+
+  -8.times do
+    .blogs
+      = image_tag asset_path('blog-img.png')
+      h4 This is blog
+
+  .navigation
+    ul
+      li
+        h3 Newest
+        p Recents blog of sharing category
+  -8.times do
+    .blogs
+      = image_tag asset_path('blog-img.png')
+      h4 This is blog
+
+
+
+

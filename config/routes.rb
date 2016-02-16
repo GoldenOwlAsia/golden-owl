@@ -6,20 +6,21 @@ Rails.application.routes.draw do
   #   resources :users
   # end
   resources :users
+  resources :contacts
   namespace :admin do
     resources :users
   end
-  resources :contacts
 
   get 'home/home'
   get 'home/about'
-  resources :blog do
-    get 'index', on: :collection
-    get 'detail', on: :collection
-  end
-  resources :posts
-  namespace :blog do
-    resources :posts
+
+  namespace :blogs do
+    get '/' => 'toppage#index'
+    resources :posts do
+      resources :comments
+    end
+    get ':seo_name/:id' => 'posts#show', as: 'post_detail'
+    resources :categories
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

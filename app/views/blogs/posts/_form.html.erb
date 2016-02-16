@@ -1,4 +1,4 @@
-<%= form_for([:blog, @post]) do |f| %>
+<%= form_for([:blogs, @post]) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -18,6 +18,10 @@
   <div class="field">
     <%= f.label :body %><br>
     <%= f.cktext_area :body, :class => 'someclass', :ckeditor => {:language => 'eng',:uiColor => '#AADC6E', :toolbar => 'mini'}%>
+  </div>
+  <div class="form-group">
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture%>
   </div>
   <div class="actions">
     <%= f.submit %>
