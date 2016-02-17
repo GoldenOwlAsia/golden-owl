@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/ctran/annotate_models.git
+  revision: 56abbaa3eb5e41a3b236f782c0bb2a49dc3d36f1
+  specs:
+    annotate (2.7.0)
+      activerecord (>= 3.2, < 6.0)
+      rake (~> 10.4)
+
+GIT
   remote: https://github.com/thoughtbot/paperclip
   revision: 523bd46c768226893f23889079a7aa9c73b57d68
   ref: 523bd46c768226893f23889079a7aa9c73b57d68
@@ -226,6 +234,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate!
   aws-sdk (< 2.0)
   bootstrap-sass (~> 3.3.5)
   byebug

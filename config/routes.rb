@@ -16,11 +16,12 @@ Rails.application.routes.draw do
 
   namespace :blogs do
     get '/' => 'toppage#index'
-    resources :posts do
-      resources :comments
+    resources :categories do
+      get ':seo_name/:id' => 'posts#show', as: 'post_detail'
+      resources :posts do
+        resources :comments
+      end
     end
-    get ':seo_name/:id' => 'posts#show', as: 'post_detail'
-    resources :categories
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

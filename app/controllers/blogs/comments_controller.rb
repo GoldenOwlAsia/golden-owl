@@ -2,15 +2,13 @@ class Blogs::CommentsController < ApplicationController
   def index
     @comments = Comment.all
   end
-  def update
-
-  end
+  def update;end
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)
     respond_to do |format|
     if @comment.save
-      format.html { redirect_to blogs_post_detail_path(@post.title.to_url, @post.id), notice: 'Post was successfully created.' }
+      format.html { redirect_to blogs_category_post_detail_path(@post.title.to_url, @post.id), notice: 'Post was successfully created.' }
     else
       flash.now[:danger] = "error"
     end

@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: contacts
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  email      :string
+#  subject    :text
+#  message    :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
@@ -9,8 +22,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1
   # GET /contacts/1.json
-  def show
-  end
+  def show;end
 
   # GET /contacts/new
   def new
@@ -18,8 +30,7 @@ class ContactsController < ApplicationController
   end
 
   # GET /contacts/1/edit
-  def edit
-  end
+  def edit;end
 
   # POST /contacts
   # POST /contacts.json
@@ -32,7 +43,7 @@ class ContactsController < ApplicationController
         flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
         format.html { redirect_to '#', notice: 'Contact was successfully created.' }
         format.json { render :show, status: :created, location: @contact }
-        
+
       else
         format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }

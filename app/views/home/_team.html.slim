@@ -1,21 +1,77 @@
-.content
+.content.container-fluid
   .h3.title.team-title
-    span TEAM
-  .col-xs-1.col-xs-offset-1.team-text-l
-    h4 JUSTIN
-    p Founder - CEO
-    div 9+ years in IT
-        Experienced project manager with agile method. 
-        Specialist in Ruby on Rails, PHP, JavaScript,..
-        Former Tech Lead at Tech In Asia. 
-  .col-xs-4.team-img-l
-    img.img-circle src="#{asset_path('team-lead-thang.jpg')}" alt=""/ 
-  .col-xs-4.team-img-r
-    img.img-circle src="#{asset_path('team-lead.jpg')}" alt=""/
-  .col-xs-1.team-text-r
-    h4 Mark Tran 
-    p CTO
-    div 9+ years in IT
-        Experienced project manager with agile method.
-        Specialist in .NET, Jquery,..
-        Delivery Service Manager at Niteco vietnam
+    span TEAM MEMBER
+  .line
+  .control
+    button.btn-left 
+      i.fa.fa-angle-left.fa-3x
+    button.btn-right 
+      i.fa.fa-angle-right.fa-3x
+  .team
+    .member
+      .member-image
+        = image_tag 'team-lead-thang.jpg'
+      .member-info
+        h3 Justin Nguyen
+        h4 CEO
+    .member
+      .member-image
+        = image_tag 'ronan.jpg'
+      .member-info
+        h3 Ronan Le
+        h4 Leader
+    .member
+      .member-image
+        = image_tag 'irene.jpg'
+      .member-info
+        h3 Irene Nguyen
+        h4 Admin
+    .member
+      .member-image
+        = image_tag 'jessica.jpg'
+      .member-info
+        h3 Jessica Nguyen
+        h4 Admin
+    .member
+      .member-image
+        = image_tag 'libra.jpg'
+      .member-info
+        h3 Libra Nguyen
+        h4 Back-end Developer
+    .member
+      .member-image
+        = image_tag 'maggie.png'
+      .member-info
+        h3 Maggie Tong
+        h4 Front-end developer
+    .member
+      .member-image
+        = image_tag 'tony.png'
+      .member-info
+        h3 Tony Nguyen
+        h4 Back-end Developer
+    .member
+      .member-image
+        = image_tag 'rose.jpg'
+      .member-info
+        h3 Rose Dao
+        h4 Marketing
+    .member
+      .member-image
+        = image_tag 'patrick.jpg'
+      .member-info
+        h3 Patrick Nguyen
+        h4 Back-end Developer
+    .member
+      .member-image
+        = image_tag 'miko.png'
+      .member-info
+        h3 Miko Hoang
+        h4 Back-end Developer
+    .member
+      .member-image
+        = image_tag 'andrew.jpg'
+      .member-info
+        h3 Andrew Huynh
+        h4 Back-end Developer
+  

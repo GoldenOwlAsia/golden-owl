@@ -1,30 +1,40 @@
-.row
+.bg-portfolio.bg-contact
+  .bg-black
+.content.container-fluid
 	.h3.title.work-title
-	  span CONTACT
-	br
-	br
-.contact.row
-	.col-md-3
-
-	.col-md-3
-	  = render partial: "contacts/form", locals:  { contact: @contact }
-	.col-md-3 
-		br
-		.panel.panel-default.contact-info
-			.panel-heading
-				h3 CONTACT INFO
-			.panel-body
-				i.fa.fa-phone
-				| +84 912 878985
-				br 
-				i.fa.fa-envelope
-				| admin@goldenowl.asia
-				br
-				i.fa.fa-map-marker
-				| 4F, 63B Calmete, District 1, Ho Chi Minh City		
-	.col-md-3
-
-	.col-md-3
-
+	  | CONTACT
+	.line
+.contact
+	.contact-col
+		.contact-form.message
+			h2 Message Us
+			.text-form
+				.form
+					h5 Name
+					input type="text"/
+				.form
+					h5 Email
+					input type="text"/
+				.form
+					h5 Subject
+					input type="text"/
+				.form
+					h5 Message
+					input type="text"/
+				.btn-send
+					button Send Us
+	.contact-col
+		.contact-form.info
+			h2 Information
+			.infomation.phone
+				i.fa.fa-phone.fa-2x
+				p +84 912 878985
+			.infomation
+				i.fa.fa-envelope.fa-2x
+				p admin@goldenowl.asia
+			.infomation
+				i.fa.fa-map-marker.fa-2x
+				p.location 4F, 63B Calmete, District 1, Ho Chi Minh City	
+			= image_tag 'map.png'
 
 

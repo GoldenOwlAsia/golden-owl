@@ -63,5 +63,7 @@ gem "ckeditor"
 gem 'simple_form'
 gem 'stringex'
 gem 'nokogiri'
+gem 'annotate', github: 'ctran/annotate_models'
+
 
 

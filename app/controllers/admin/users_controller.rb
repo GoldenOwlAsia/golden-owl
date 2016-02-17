@@ -9,6 +9,5 @@ class Admin::UsersController < ApplicationController
       params[:user].delete(:password_confirmation)
     end
   end
-  def show()
-  end
+  def show;end
 end

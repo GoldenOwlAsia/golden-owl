@@ -1,25 +1,51 @@
-.content
-  .h3.title.work-title
-    span PORFOLIO
+.bg-portfolio
+  .bg-black
+.content.container-fluid
+  .h3.title
+    span PORTFOLIO
+  .line
   .content-work
-    div class="view view-ninth" 
-      img src="#{asset_path('blix.png')}"
-      div class="mask mask-1"
-      div class="mask mask-2"
-      div class="content"  
-        h2 Blix tv
-        p The web app use to display performance & sale analytic of TV channels and advertising
-    div class="view view-ninth" 
-      img src="#{asset_path('techlist.png')}"
-      div class="mask mask-1"
-      div class="mask mask-2"
-      div class="content"  
-        h2 TechList
-        p Website platform where investors and startup founder meet each other
-    div class="view view-ninth" 
-      img src="#{asset_path('luxenomad.jpg')}"
-      div class="mask mask-1"
-      div class="mask mask-2" 
-      div class="content"  
-        h2 The Luxe Normad  
-        p Asia-Pacific’s leading luxury villa and hotel booking portal with over 160.000 users
+    .content-element
+      .content-image
+        = image_tag 'artfolio.png'
+      .content-hover
+        .line
+        .line
+        .line
+        .line
+        h2 Artfolio
+        p
+          a href="#" View
+    .content-element
+      .content-image
+        = image_tag 'techlist.png'
+      .content-hover
+        .line
+        .line
+        .line
+        .line
+        h2 Techlist
+        p
+          a href="#" View
+    .content-element
+      .content-image
+        = image_tag 'serumi.png'
+      .content-hover
+        .line
+        .line
+        .line
+        .line
+        h2 Serumi
+        p
+          a href="#" View
+    .content-element
+      .content-image
+        = image_tag 'warehouse.png'
+      .content-hover
+        .line
+        .line
+        .line
+        .line
+        h2 Warehouse
+        p
+          a href="#" View
