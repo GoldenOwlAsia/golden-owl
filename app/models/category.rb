@@ -10,4 +10,7 @@
 
 class Category < ActiveRecord::Base
   has_many :posts
+  def to_param # Note that this will override the [:id] parameter in routes.rb.
+    name
+  end
 end

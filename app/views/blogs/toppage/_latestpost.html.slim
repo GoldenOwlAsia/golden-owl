@@ -4,14 +4,17 @@
   //     input name="q" placeholder="Search..." type="text"
   .col-lg-3.no-padding
     .title
-      h3 Sharing
+      - if @category != nil
+        h3 #{@category.name.capitalize}
+      - else
+        h3 Blogs
     .secondblog
-      = image_tag(@posts.last.picture)
-      h4 #{@posts.last.title}
+      = image_tag(@most_views.first.picture)
+      = link_to @most_views.first.title, blogs_post_detail_path(@most_views.first.title.to_url, @most_views.first.id)
   .col-lg-9.no-padding
     .firstblog
-      = image_tag(@posts.last.picture)
-      h4 #{@posts.last.title}
+      = image_tag(@newest_views.first.picture)
+      = link_to @newest_views.first.title, blogs_post_detail_path(@newest_views.first.title.to_url, @newest_views.first.id)
 
   .navigation
     ul
@@ -19,20 +22,20 @@
         h3 Most View
         p Top blog of sharing category
 
-  -8.times do
+  - @most_views.each  do |post|
     .blogs
-      = image_tag asset_path('blog-img.png')
-      h4 This is blog
+      = image_tag(post.picture)
+      = link_to post.title, blogs_post_detail_path(post.title.to_url, post.id)
 
   .navigation
     ul
       li
         h3 Newest
         p Recents blog of sharing category
-  -8.times do
+  - @newest_views.each do |post|
     .blogs
-      = image_tag asset_path('blog-img.png')
-      h4 This is blog
+      = image_tag(post.picture)
+      = link_to post.title, blogs_post_detail_path(post.title.to_url, post.id)
 
 
 

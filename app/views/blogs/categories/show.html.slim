@@ -1,0 +1,10 @@
+section#navigate.navigate-section
+  .inner-container
+    = render "blogs/toppage/navigate"
+section#latestpost.latestpost-section
+  .inner-container
+    = render "blogs/toppage/latestpost"
+
+
+= link_to 'Edit', edit_blogs_category_path(@category)
+= link_to 'Back', blogs_categories_path

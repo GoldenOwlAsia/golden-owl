@@ -1,6 +1,6 @@
 class Blogs::CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
-
+  impressionist
   # GET /categories
   # GET /categories.json
   def index
@@ -9,7 +9,12 @@ class Blogs::CategoriesController < ApplicationController
 
   # GET /categories/1
   # GET /categories/1.json
-  def show;end
+  def show
+    @categories = Category.all.order('id')
+    @posts = Post.all
+    @most_views = Post.order('view DESC').first(8)
+    @newest_views = Post.order('created_at DESC').first(8)
+  end
 
   # GET /categories/new
   def new
@@ -62,7 +67,7 @@ class Blogs::CategoriesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_category
-      @category = Category.find(params[:id])
+      @category = Category.find_by_name(params[:name])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

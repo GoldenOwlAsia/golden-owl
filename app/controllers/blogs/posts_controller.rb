@@ -1,21 +1,24 @@
 class Blogs::PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action:authenticate_user!
+  impressionist
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
+    @category = Category.find_by_id(@post.category_id)
+    @categories = Category.all.order('id')
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @posts = Post.all
     @post = Post.find_by_id(params[:id])
+    @category = Category.find_by_id(@post.category_id)
+    @categories = Category.all.order('id')
     @post.view += 1
     @post.save!
-    @seo_name = @post.title
-
-
   end
 
   # GET /posts/new
@@ -47,7 +50,7 @@ class Blogs::PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to blogs_post_path(@post), notice: 'Post was successfully updated.' }
+        format.html { redirect_to blogs_post_detail_path(@post.title.to_url, @post.id), notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
@@ -74,6 +77,6 @@ class Blogs::PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :body, :picture, :view)
+      params.require(:post).permit(:title, :body, :picture, :view,:category_id)
     end
 end

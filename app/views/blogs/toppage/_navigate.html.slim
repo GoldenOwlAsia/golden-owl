@@ -6,23 +6,61 @@
       h2 Owl Consulting
   .category
     ul
-      li
-        i class="fa fa-pencil fa-3x"
-      li
-        i class="fa fa-heart-o fa-3x"
-      li
-        i class="fa fa-mobile fa-3x"
-      li
-        i class="fa fa-diamond fa-3x"
-      li
-        .blog
-          p Blog
-        .sharing
-          p Sharing
-        .fontend
-          p Fontend
-        .ror
-          p RoR
+      // - @categories.each do |cate|
+      //   - if @category.name == cate.name
+      //     li.category-menu.active
+      //       = link_to blogs_category_show_path(cate.name)
+      //         i class="fa fa-pencil fa-3x"
+      //   - else
+      //     li.category-menu
+      //       = link_to blogs_category_show_path(cate.name)
+      //         i class="fa fa-pencil fa-3x"
+      - if @category.name == @categories.first.name
+        li.category-menu.active
+          = link_to blogs_path
+            i class="fa fa-pencil fa-3x"
+      - else
+        li.category-menu
+          = link_to blogs_path
+            i class="fa fa-pencil fa-3x"
+      - if @category.name == @categories.second.name
+        li.category-menu.active
+          = link_to blogs_category_show_path(@categories.second.name)
+            i class="fa fa-heart-o fa-3x"
+      - else
+        li.category-menu
+          = link_to blogs_category_show_path(@categories.second.name)
+            i class="fa fa-heart-o fa-3x"
+      - if @category.name == @categories.third.name
+        li.category-menu.active
+          = link_to blogs_category_show_path(@categories.third.name)
+            i class="fa fa-mobile fa-3x"
+      - else
+        li.category-menu
+          = link_to blogs_category_show_path(@categories.third.name)
+            i class="fa fa-mobile fa-3x"
+      - if  @category.name == @categories.fourth.name
+        li.category-menu.active
+          = link_to blogs_category_show_path(@categories.fourth.name)
+            i class="fa fa-diamond fa-3x"
+      - else
+        li.category-menu
+          = link_to blogs_category_show_path(@categories.fourth.name)
+            i class="fa fa-diamond fa-3x"
+      li.show-category-name
+        - @categories.each do |cate|
+          - if @category.name == cate.name
+              p.active #{cate.name.capitalize}
+          - else
+              p #{cate.name.capitalize}
+      // .blog.active
+      //   p Blog
+      // .sharing
+      //   p Sharing
+      // .fontend
+      //   p Fontend
+      // .ror
+      //   p RoR
       // li
       //   .searchbox
       //     form#search action="/search" method="get"
@@ -34,9 +72,35 @@
       // button.btn.btn-purple.btn-border-rev Chao
       .user
         - if user_signed_in?
-          = link_to current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
-          = link_to "Logout", destroy_user_session_path, :class => "btn btn-blue btn-border-rev", :method => :delete
+          = link_to "Hi " + current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
+          div class="btn-group"
+            button class="btn btn-blue btn-border-rev" data-toggle="dropdown"
+                i class="fa fa-caret-down"
+            ul class="dropdown-menu" role="menu"
+              li
+                = link_to user_path(current_user)
+                  i class="fa fa-cog"
+                  | Setting
+              li
+                = link_to edit_user_registration_path
+                  i class="fa fa-user"
+                  | Profile
+              li class="divider"
+              li
+                = link_to destroy_user_session_path
+                  i class="fa fa-sign-out" title = "Sign Out"
+                  | Sign Out
+          div class="btn-group"
+            button class="btn btn-red btn-border-rev" data-toggle="dropdown"
+                i class="fa fa-plus-circle"
+            ul class="dropdown-menu" role="menu"
+              li
+                = link_to new_blogs_post_path
+                  i class="fa  fa-plus-square-o"
+                  | New Post
+
         - else
           = link_to "Sign In", new_user_registration_path, :class => "btn btn-purple btn-border-rev"
           = link_to "Login", new_user_session_path, :class => "btn btn-blue btn-border-rev"
+
 

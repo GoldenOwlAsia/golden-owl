@@ -12,8 +12,6 @@ $('document').ready(function() {
     var current_menu = $('.menu-content > li:nth-child(1) > .inside');
     var numService = $('.service-row').size();
 
-<<<<<<< HEAD
-=======
     //Set team default
     var left = 0;
     $('.member:nth-child(1)').css('margin-left',left + 'px');
@@ -31,7 +29,6 @@ $('document').ready(function() {
     $('.bg-contact').css('height', heightContact + 'px');
 
     //Auto slider
-<<<<<<< HEAD
     var autoNext = setInterval(setAuto,10000);
     $('.image-slider > .image:nth-child(1) > img').css({'transform':'scale(1)','opacity':'0.4'});
 
@@ -72,8 +69,6 @@ $('document').ready(function() {
         }
       }
 
-<<<<<<< HEAD
-=======
       //Animation About Scroll
       var about = window.matchMedia("screen and (min-width: 987px)");
       if(about.matches){

@@ -64,6 +64,8 @@ gem 'simple_form'
 gem 'stringex'
 gem 'nokogiri'
 gem 'annotate', github: 'ctran/annotate_models'
+gem 'impressionist'
+gem 'seed_dump', '~> 3.2', '>= 3.2.4'
 
 
 
