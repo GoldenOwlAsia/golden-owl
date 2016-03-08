@@ -1,33 +1,45 @@
 .content
-	h3.title
-		span SERVICE
-	.line
-	.container.service-center
+	/ h3.title
+	/ 	span SERVICE
+	/ .line
+	h4 
+		| At GoldenOwl, we committed to provide impactful solution for your company's technical problems. We focus on helping our customers 
+		span turning their ideas 
+		| into a website/ mobile application and 
+		span satisfy every requirement.
+	.container-fluid.service-center
 		.service-row
-			.service-img.service-right
+			.service-img
 				=image_tag 'serviceoutsourcing.png'
-			.text-service.text-service-right
-				h4 Outsourcing Service
+			.text-service
+				h4 Outsourcing
+				.line
 				p
-				 | We provide IT outsourcing service for companies. Our team is built from outstanding developers who have 6+ years experienced in website/software/mobile application development. 
+				 | Our team is built from outstanding developers who have 6+ years experienced in website/software/mobile application development. 
 		.service-row
 			.service-img
 				=image_tag 'webdesign.png'
-			.text-service.text-service-left
-				h4 Web Design And Development
+			.text-service
+				h4 Web Design
+				.line
 				p
-				 | We have been doing on developing website for years. We develop with only the latest technology: CSS3, HTML5 and Ruby On Rails.
+				 | We develop with only the latest technology: CSS3, HTML5 and Ruby On Rails.
 		.service-row
-			.service-img.service-right
+			.service-img
 				=image_tag 'automation.png'
-			.text-service.text-service-right
+			.text-service
 				h4 Automation Test
+				.line
 				p
-				 | Manual testing increases exponentially as the project grows; that's why we do automated testing. Automated tests keep costs down and gives us the confidence to make changes.
+				 | Automated tests keep costs down and gives us the confidence to make changes.
 		.service-row
 			.service-img
 				=image_tag 'seo.png'
-			.text-service.text-service-left
-				h4 SEO (Search Engine Optimization)
+			.text-service
+				h4 SEO
+				.line
 				p
-				 | Building nice content for your website is take times and money. So why not outsource it to experienced company to make it convenient and cheaper. We offer professional content outsource service.
+				 | We offer professional content outsource service to build nice content for you website
+section#service.skill-section
+	.inner-container
+		= render "skill"

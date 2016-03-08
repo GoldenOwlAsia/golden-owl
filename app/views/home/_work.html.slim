@@ -4,48 +4,69 @@
   .h3.title
     span PORTFOLIO
   .line
+  p Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua vero eos et accusam et justo duo dolores et ea rebum.
   .content-work
     .content-element
       .content-image
-        = image_tag 'artfolio.png'
+        = image_tag 'artfolo.png'
       .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 Artfolio
-        p
-          a href="http://artfolo-goldenowl.herokuapp.com" View
+        .button-group
+          button#btn-search.btn-search
+            = image_tag 'iconsearch.png'
+          = link_to "http://artfolo-goldenowl.herokuapp.com" do
+            button.btn-search
+              = image_tag 'iconlocation.png'
+          end
+        .background
+      h5 Artfolo
+      h6 Website Ruby On Rails
     .content-element
       .content-image
-        = image_tag 'techlist.png'
+        = image_tag 'student1.png'
       .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 SLC
-        p
-          a href="https://sleepy-coast-4486.herokuapp.com/" View
+        .button-group
+          button#btn-search.btn-search
+            = image_tag 'iconsearch.png'
+          = link_to "https://sleepy-coast-4486.herokuapp.com/" do
+            button.btn-search
+              = image_tag 'iconlocation.png'
+          end
+        .background
+      h5 Student Life Care
+      h6 Website Ruby On Rails
     .content-element
       .content-image
-        = image_tag 'serumi.png'
+        = image_tag 'serumi1.png'
       .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 Serumi
-        p
-          a href="http://www.naturion.com/" View
+        .button-group
+          button#btn-search.btn-search
+            = image_tag 'iconsearch.png'
+          = link_to "http://www.naturion.com/" do
+            button.btn-search
+              = image_tag 'iconlocation.png'
+          end
+        .background
+      h5 Naturion
+      h6 Website Ruby On Rails
     .content-element
       .content-image
-        = image_tag 'warehouse.png'
+        = image_tag 'warehous1.png'
       .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 Warehouse
-        p
-          a href="http://serene-anchorage-3366.herokuapp.com/" View
+        .button-group
+          button#btn-search.btn-search
+            = image_tag 'iconsearch.png'
+          = link_to "http://serene-anchorage-3366.herokuapp.com/" do
+            button.btn-search
+              = image_tag 'iconlocation.png'
+          end
+        .background
+      h5 Ware House
+      h6 Website Ruby On Rails
+.image-large
+  .image-content
+    = image_tag 'artfolo.png'
+    = image_tag 'student.png'
+    = image_tag 'serumi.png'
+    = image_tag 'warehous.png'
+  .image-bg
+      
