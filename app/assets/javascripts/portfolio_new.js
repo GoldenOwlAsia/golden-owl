@@ -53,7 +53,7 @@ $('document').ready(function(){
     var elAll4 = document.getElementById('weath');
     var elAll13 = document.getElementById('artfolo');
     var elAll14 = document.getElementById('cpd');
-    var elAll15 = document.getElementById('blix');
+    // var elAll15 = document.getElementById('blix');
     var elAll16 = document.getElementById('built');
     // var elAll17 = document.getElementById('flat');
     var elAll18 = document.getElementById('gllu');
@@ -69,7 +69,7 @@ $('document').ready(function(){
     var elAll28 = document.getElementById('natt');
     var elAll29 = document.getElementById('allstart');
     var elAll30 = document.getElementById('laku6');
-    var elAll31 = document.getElementById('a21');
+    // var elAll31 = document.getElementById('a21');
     var elAll32 = document.getElementById('dbs');
     var elAll5 = document.getElementById('corpzap');
     // var elAll6 = document.getElementById('luxufy');
@@ -80,20 +80,20 @@ $('document').ready(function(){
     var elAll11 = document.getElementById('app2rist');
     var elAll12 = document.getElementById('nattrart');
     var elWeb1 = document.getElementById('corpzap-w');
-    var elWeb2 = document.getElementById('luxufy-w');
+    // var elWeb2 = document.getElementById('luxufy-w');
     var elWeb3 = document.getElementById('student-w');
     var elWeb4 = document.getElementById('luxenomad-w');
     var elWeb5 = document.getElementById('artfolo-w');
     var elWeb6 = document.getElementById('cpd-w');
     var elWeb7 = document.getElementById('blix-w');
-    var elWeb8 = document.getElementById('flat-w');
+    // var elWeb8 = document.getElementById('flat-w');
     var elWeb9 = document.getElementById('study-w');
     var elWeb10 = document.getElementById('iadoa-w');
     var elWeb11 = document.getElementById('serumi-w');
     var elWeb12 = document.getElementById('stage-w');
     var elWeb13 = document.getElementById('techlist-w');
     var elWeb14 = document.getElementById('idea-burn-w');
-    var elWeb15 = document.getElementById('giveasia-w');
+    // var elWeb15 = document.getElementById('giveasia-w');
     var elWeb16 = document.getElementById('weath-w');
     var elWeb17 = document.getElementById('toned-w');
     var elWeb18 = document.getElementById('tyk-w');
@@ -101,11 +101,11 @@ $('document').ready(function(){
     var elWeb20 = document.getElementById('natt-w');
     var elWeb21 = document.getElementById('allstart-w');
     var elWeb22 = document.getElementById('laku6-w');
-    var elWeb23 = document.getElementById('a21-w');
+    // var elWeb23 = document.getElementById('a21-w');
     var elWeb24 = document.getElementById('study-w2');
-    var elMobile1 = document.getElementById('booqed-m');
+    // var elMobile1 = document.getElementById('booqed-m');
     var elMobile2 = document.getElementById('mywork-m');
-    var elMobile3 = document.getElementById('app2rist-m');
+    // var elMobile3 = document.getElementById('app2rist-m');
     var elMobile4 = document.getElementById('nattrart-m');
     var elMobile5 = document.getElementById('gllu-m');
     var elMobile6 = document.getElementById('fitday-m');
@@ -114,7 +114,7 @@ $('document').ready(function(){
     var elMobile9 = document.getElementById('app2rist-m2');
     var elMobile10 = document.getElementById('dbs-m');
     var elMobile11 = document.getElementById('view360-m');
-    var elMobile12 = document.getElementById('toned-m');
+    // var elMobile12 = document.getElementById('toned-m');
 
     function all1Click(){
       details.style.display = "block";
@@ -402,7 +402,7 @@ $('document').ready(function(){
     elAll12.addEventListener('click', all12Click, false);
     elAll13.addEventListener('click', all13Click, false);
     elAll14.addEventListener('click', all14Click, false);
-    elAll15.addEventListener('click', all15Click, false);
+    // elAll15.addEventListener('click', all15Click, false);
     elAll16.addEventListener('click', all16Click, false);
     // elAll17.addEventListener('click', all17Click, false);
     elAll18.addEventListener('click', all18Click, false);
@@ -418,11 +418,11 @@ $('document').ready(function(){
     elAll28.addEventListener('click', all28Click, false);
     elAll29.addEventListener('click', all29Click, false);
     elAll30.addEventListener('click', all30Click, false);
-    elAll31.addEventListener('click', all31Click, false);
+    // elAll31.addEventListener('click', all31Click, false);
     elAll32.addEventListener('click', all32Click, false);
-    elMobile1.addEventListener('click', mobile1Click, false);
+    // elMobile1.addEventListener('click', mobile1Click, false);
     elMobile2.addEventListener('click', mobile2Click, false);
-    elMobile3.addEventListener('click', mobile3Click, false);
+    // elMobile3.addEventListener('click', mobile3Click, false);
     elMobile4.addEventListener('click', mobile4Click, false);
     elMobile5.addEventListener('click', mobile5Click, false);
     elMobile6.addEventListener('click', mobile6Click, false);
@@ -431,22 +431,22 @@ $('document').ready(function(){
     elMobile9.addEventListener('click', mobile9Click, false);
     elMobile10.addEventListener('click', mobile10Click, false);
     elMobile11.addEventListener('click', mobile11Click, false);
-    elMobile12.addEventListener('click', mobile12Click, false);
+    // elMobile12.addEventListener('click', mobile12Click, false);
     elWeb1.addEventListener('click', web1Click, false);
-    elWeb2.addEventListener('click', web2Click, false);
+    // elWeb2.addEventListener('click', web2Click, false);
     elWeb3.addEventListener('click', web3Click, false);
     elWeb4.addEventListener('click', web4Click, false);
     elWeb5.addEventListener('click', web5Click, false);
     elWeb6.addEventListener('click', web6Click, false);
     elWeb7.addEventListener('click', web7Click, false);
-    elWeb8.addEventListener('click', web8Click, false);
+    // elWeb8.addEventListener('click', web8Click, false);
     elWeb9.addEventListener('click', web9Click, false);
     elWeb10.addEventListener('click', web10Click, false);
     elWeb11.addEventListener('click', web11Click, false);
     elWeb12.addEventListener('click', web12Click, false);
     elWeb13.addEventListener('click', web13Click, false);
     elWeb14.addEventListener('click', web14Click, false);
-    elWeb15.addEventListener('click', web15Click, false);
+    // elWeb15.addEventListener('click', web15Click, false);
     elWeb16.addEventListener('click', web16Click, false);
     elWeb17.addEventListener('click', web17Click, false);
     elWeb18.addEventListener('click', web18Click, false);
@@ -454,7 +454,7 @@ $('document').ready(function(){
     elWeb20.addEventListener('click', web20Click, false);
     elWeb21.addEventListener('click', web21Click, false);
     elWeb22.addEventListener('click', web22Click, false);
-    elWeb23.addEventListener('click', web23Click, false);
+    // elWeb23.addEventListener('click', web23Click, false);
     elWeb24.addEventListener('click', web24Click, false);
   }
   //return page
