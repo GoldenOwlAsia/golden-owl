@@ -59,7 +59,7 @@ $('document').ready(function(){
     var elAll18 = document.getElementById('gllu');
     var elAll19 = document.getElementById('fitday');
     var elAll20 = document.getElementById('stage');
-    var elAll21 = document.getElementById('study');
+    // var elAll21 = document.getElementById('study');
     var elAll22 = document.getElementById('iadoa');
     var elAll23 = document.getElementById('serumi');
     var elAll24 = document.getElementById('scope');
@@ -85,9 +85,9 @@ $('document').ready(function(){
     var elWeb4 = document.getElementById('luxenomad-w');
     var elWeb5 = document.getElementById('artfolo-w');
     var elWeb6 = document.getElementById('cpd-w');
-    var elWeb7 = document.getElementById('blix-w');
+    // var elWeb7 = document.getElementById('blix-w');
     // var elWeb8 = document.getElementById('flat-w');
-    var elWeb9 = document.getElementById('study-w');
+    // var elWeb9 = document.getElementById('study-w');
     var elWeb10 = document.getElementById('iadoa-w');
     var elWeb11 = document.getElementById('serumi-w');
     var elWeb12 = document.getElementById('stage-w');
@@ -102,7 +102,7 @@ $('document').ready(function(){
     var elWeb21 = document.getElementById('allstart-w');
     var elWeb22 = document.getElementById('laku6-w');
     // var elWeb23 = document.getElementById('a21-w');
-    var elWeb24 = document.getElementById('study-w2');
+    // var elWeb24 = document.getElementById('study-w2');
     // var elMobile1 = document.getElementById('booqed-m');
     var elMobile2 = document.getElementById('mywork-m');
     // var elMobile3 = document.getElementById('app2rist-m');
@@ -408,7 +408,7 @@ $('document').ready(function(){
     elAll18.addEventListener('click', all18Click, false);
     elAll19.addEventListener('click', all19Click, false);
     elAll20.addEventListener('click', all20Click, false);
-    elAll21.addEventListener('click', all21Click, false);
+    // elAll21.addEventListener('click', all21Click, false);
     elAll22.addEventListener('click', all22Click, false);
     elAll23.addEventListener('click', all23Click, false);
     elAll24.addEventListener('click', all24Click, false);
@@ -438,9 +438,9 @@ $('document').ready(function(){
     elWeb4.addEventListener('click', web4Click, false);
     elWeb5.addEventListener('click', web5Click, false);
     elWeb6.addEventListener('click', web6Click, false);
-    elWeb7.addEventListener('click', web7Click, false);
+    // elWeb7.addEventListener('click', web7Click, false);
     // elWeb8.addEventListener('click', web8Click, false);
-    elWeb9.addEventListener('click', web9Click, false);
+    // elWeb9.addEventListener('click', web9Click, false);
     elWeb10.addEventListener('click', web10Click, false);
     elWeb11.addEventListener('click', web11Click, false);
     elWeb12.addEventListener('click', web12Click, false);
@@ -455,7 +455,7 @@ $('document').ready(function(){
     elWeb21.addEventListener('click', web21Click, false);
     elWeb22.addEventListener('click', web22Click, false);
     // elWeb23.addEventListener('click', web23Click, false);
-    elWeb24.addEventListener('click', web24Click, false);
+    // elWeb24.addEventListener('click', web24Click, false);
   }
   //return page
   var bg = document.getElementById('bg-project');
