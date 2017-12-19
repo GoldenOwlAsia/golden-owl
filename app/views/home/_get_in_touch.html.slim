@@ -25,12 +25,10 @@
               - @contact.errors.full_messages.each do |message|
                 li= message
         .input-1
-          = f.text_field :name, required: "true", type: "text", :value => "Name"
+          = f.text_field :name, required: "true", type: "text", placeholder: 'Name'
         .input-2
-          = f.text_field :email, required: "true", type: "email", :value => "Email"
-        / .input-hidden
-        /   = f.text_field :subject, class: "form-control", required: "true", type: "text"
+          = f.text_field :email, required: "true", type: "email", placeholder: 'Email'
         .input-3
-          = f.text_area :message, required: "true", type: "text", :value => "Your message...", cols: "4"
+          = f.text_area :message, required: "true", type: "text", placeholder: 'Your Message', cols: "4"
         .submit-button
           = f.submit "SEND MESSAGE"
