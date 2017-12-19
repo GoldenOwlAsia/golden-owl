@@ -29,8 +29,6 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # fa-icon
 gem 'font-awesome-sass', '~> 4.4.0'
 
-gem 'bundler', '~>1.14.6'
-
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
@@ -82,10 +80,5 @@ gem 'simple_form'
 gem 'stringex'
 # gem 'nokogiri'
 gem 'impressionist'
-
 gem 'devise-bootstrap-views'
-
-
-
-
-
+gem 'sendgrid-ruby'
