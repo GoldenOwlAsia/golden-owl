@@ -29,9 +29,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # fa-icon
 gem 'font-awesome-sass', '~> 4.4.0'
 
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
+gem 'therubyracer'
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails'
 
 
 # Use ActiveModel has_secure_password
@@ -69,13 +69,13 @@ end
 gem 'rails_12factor', group: :production
 
 gem 'devise'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 #add image to user gem
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'aws-sdk', '>= 2.0.0'
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
-gem "ckeditor"
+gem 'ckeditor'
 gem 'simple_form'
 gem 'stringex'
 # gem 'nokogiri'
