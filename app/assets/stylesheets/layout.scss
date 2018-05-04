@@ -1,19 +1,23 @@
-nav.navbar {
-  min-height:initial;
+.navbar {
+  background: url("header-background.png") no-repeat center center;
+  border: 0;
   height: 46px;
-  background: url('header-background.png') no-repeat center center;
-  border: none;
-  
-  .navbar-nav > li > a {
-    font-family: 'Montserrat', sans-serif;
-    color: #8f8b86;
-    line-height: 10px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-}
+  min-height: initial;
 
-#logo {
-  height: 12px;
-  margin: 17px 0;
+  .navbar-nav {
+    li { 
+      a {
+        color: #8f8b86;
+        font-family: "Montserrat", sans-serif;
+        line-height:    10px;
+        padding-bottom: 18px;
+        padding-top:    18px;
+      }
+    }
+  }
+
+  #logo {
+    height: 12px;
+    margin: 17px 0;
+  }
 }
