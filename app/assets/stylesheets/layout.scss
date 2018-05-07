@@ -35,6 +35,14 @@ $header-height: 46px;
       margin-top: 6px;
       margin-bottom: 6px;
     }
+    
+    .navbar-collapse.in {
+      overflow-y: initial;
+    }
+
+    .navbar-collapse {
+      background-color: rgba(243,240,229,0.64);
+    }
 
     #logo {
       height: 12px;
