@@ -1,44 +1,27 @@
-$font-color: #8c7e6b;
-$contain-font-color: #6f624f;
+$font-color: #6f624f;
+
 .intro-container {
   min-height: calc(100vh - 46px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  font-family: 'Dosis', sans-serif;
   text-align: center;
   
   background: url("intro-background.png") no-repeat center;
   background-size: cover;
 
-  .intro-header {
-    color: $font-color;
-    font-size: 37px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .intro-content {
-    width: 60%;
-    color: $contain-font-color;
-    font-size: 12px;
-    font-weight: 500;
-    margin: 15px auto;
-  }
-
   .intro-button {
     margin-top: 20px;
     .btn {
       height: 40px;
-      color: $contain-font-color;
+      color: $font-color;
 
       font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-weight: 500;
       
       background-color: Transparent;
-      border: 2px $contain-font-color solid;
+      border: 2px $font-color solid;
       border-radius: 0;
     }
   }

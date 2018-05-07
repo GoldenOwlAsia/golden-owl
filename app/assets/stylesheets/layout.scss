@@ -5,6 +5,30 @@ $header-height: 46px;
   margin-left: $sidebar-width;
 }
 
+.row {
+  margin: 0 0;
+}
+
+$font-color: #8c7e6b;
+$content-font-color: #6f624f;
+section {
+  font-family: 'Dosis', sans-serif;
+  .header {
+    color: $font-color;
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    width: 60%;
+    color: $content-font-color;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 15px auto;
+  }
+}
+
 .shared-header-container {
   margin-left: $sidebar-width;
 

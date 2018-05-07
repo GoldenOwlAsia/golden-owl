@@ -1,0 +1,23 @@
+.whatwedo-container {
+  min-height: 100vh;
+  text-align: center;
+  .fields {
+    .row {
+      width: 75%;
+      margin: 0 auto;
+      .col-sm-4 {
+        .image {
+          height: 44px;
+          img {
+            height: 100%;
+          }
+        }
+        section {
+          .header {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
