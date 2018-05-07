@@ -1,11 +1,25 @@
+$sidebar-width: 44px;
+$header-height: 46px;
+
+#home-container {
+  margin-left: $sidebar-width;
+}
+
 .shared-header-container {
+  margin-left: $sidebar-width;
   .navbar {
+
     background: url("header-background.png") no-repeat center center;
     border: 0;
     border-radius: 0;
     height: 46px;
     min-height: initial;
-    overflow: auto;
+    margin: 0;
+
+    .container-fluid:before {
+      display: block;
+    }
+
     .navbar-nav {
       li { 
         a {
@@ -29,12 +43,13 @@ $sidebar-logo-bg: #6f624f;
 $sidebar-nav-bg:  #8c7e6b;
 $active-item-bg:  #f3c339;
 $nav-item-border-cl: #999999;
+
 .shared-sidebar-container {
+  width: $sidebar-width;
   float: left;
-  width: 44px;
 
   .sidebar-logo {
-    height: 46px;
+    height: $header-height;
     padding: 7px 11px;
     background-color: $sidebar-logo-bg;
     img {
