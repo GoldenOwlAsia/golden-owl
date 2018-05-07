@@ -7,6 +7,7 @@ $header-height: 46px;
 
 .shared-header-container {
   margin-left: $sidebar-width;
+
   .navbar {
 
     background: url("header-background.png") no-repeat center center;
@@ -16,20 +17,23 @@ $header-height: 46px;
     min-height: initial;
     margin: 0;
 
-    .container-fluid:before {
-      display: block;
-    }
-
     .navbar-nav {
       li { 
         a {
           color: #8f8b86;
           font-family: "Montserrat", sans-serif;
-          line-height:    10px;
-          padding-bottom: 18px;
-          padding-top:    18px;
+          font-size: 11px;
+          font-weight: 500;
+          line-height: 12px;
+          padding-bottom: 17px;
+          padding-top:    17px;
         }
       }
+    }
+
+    .navbar-toggle {
+      margin-top: 6px;
+      margin-bottom: 6px;
     }
 
     #logo {
@@ -46,7 +50,9 @@ $nav-item-border-cl: #999999;
 
 .shared-sidebar-container {
   width: $sidebar-width;
-  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
 
   .sidebar-logo {
     height: $header-height;
