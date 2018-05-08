@@ -1,0 +1,32 @@
+.whoweare-container {
+  min-height: 100vh;
+  text-align: center;
+  .introduction {
+    .row {
+
+      section {
+        .header {
+          line-height: 16px;
+          margin-top: 30px;
+          font-size: 16px;
+        }
+      }
+
+      .col-sm-4 {
+        margin-top: 50px;
+        padding: 0 30px;
+      }
+    }
+    
+    .row.about {
+      text-align: left;
+      ul {
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+.whoweare-container > section {
+    padding-top: 60px;
+}
