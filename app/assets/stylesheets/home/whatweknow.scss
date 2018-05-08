@@ -1,7 +1,7 @@
 .whatweknow-container {
   min-height: 100vh;
   text-align: center;
-  background-color: #f3efe6;
+  background-color: $middle-gray;
   .technologies {
     .row {
       .col-sm-3 {
@@ -15,5 +15,6 @@
     padding-top: 60px;
     .content {
       width: 33.333%;
+      font-size: 14px;
     }
 }

@@ -8,6 +8,26 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
+//## My customizations
+//Sidebar background
+$light-brown: #8c7e6b;
+//Logo background
+$dark-brown: #6f624f;
+
+//Font color
+$light-gray: #c1b8ab;
+//Sidebar bottom border
+$bright-gray: #999999;
+//Section background color
+$middle-gray: #f3efe6;
+
+//Active sidebar element
+$lemon-yellow: #f3c339;
+
+$sidebar-width: 44px;
+$header-height: 46px;
+
+//## Default
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
@@ -362,7 +382,7 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+$navbar-height:                    $header-height !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
