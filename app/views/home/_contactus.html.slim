@@ -1,0 +1,40 @@
+.contactus-container id='contactus'
+  section
+    .header 
+      | Contact us
+    .content
+      | Contact us for further information
+  .row.info
+    .col-md-10.col-md-offset-1
+      .col-sm-6
+        section
+          .header
+            | Summary
+          .content
+            | Lorem ipsum dolor sit amet, pro commune offendit eu. Vel everti detracto petentium ea, in agam malorum delectus sed. His quod quodsi patrioque id, usu ad habeo dicam dictas, pro ne argumentum neglegentur. 
+      .col-sm-3
+        section
+          .header
+            | Address
+          .content
+            | 40E Ngo Duc Ke Street, District 1
+            br
+            | Ben Nghe Ward, HCMC, Vietnam
+      .col-sm-3
+        section
+          .content
+            = fa_icon 'phone-square'
+            | &nbsp;
+            | 0000 0000
+            br
+            = fa_icon 'envelope'
+            | &nbsp;
+            | admin@goldenowl.asia
+            br
+            | www.goldenowl.asia 
+  .row
+    .col-md-10.col-md-offset-1
+      .col-sm-7.map id='map'
+        
+      .col-sm-5.contact-fields
+        = render '/contacts/form', contact: Contact.new

@@ -10,24 +10,15 @@ $content-color: #6f624f;
   background-size: cover;
   
   section {
+    .header {
+      font-size: 36px;
+    }
     .content {
       color: $content-color;
-      width: 50%;
+      width: 70%;
     }
   }
   .intro-button {
     margin-top: 20px;
-    .btn {
-      height: 40px;
-      color: $content-color;
-
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      
-      background-color: Transparent;
-      border: 2px $content-color solid;
-      border-radius: 0;
-    }
   }
 }

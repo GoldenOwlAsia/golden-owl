@@ -1,37 +1,8 @@
 $sidebar-width: 44px;
 $header-height: 46px;
-$header-color: #8c7e6b;
-$content-color: #c1b8ab;
 
 #home-container {
   margin-left: $sidebar-width;
-}
-
-.row {
-  margin: 0 0;
-}
-
-.image {
-  height: 44px;
-  img {
-    height: 100%;
-  }
-}
-section {
-  font-family: 'Dosis', sans-serif;
-  .header {
-    color: $header-color;
-    font-size: 37px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .content {
-    color: $content-color;
-    font-size: 12px;
-    font-weight: 500;
-    margin: 15px auto;
-  }
 }
 
 .shared-header-container {
@@ -88,6 +59,7 @@ $nav-item-border-cl: #999999;
 .shared-sidebar-container {
   width: $sidebar-width;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
 
