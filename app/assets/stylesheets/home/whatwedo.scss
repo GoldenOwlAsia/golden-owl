@@ -1,18 +1,12 @@
 .whatwedo-container {
   min-height: 100vh;
   text-align: center;
-  
   .fields {
     .row {
       .col-sm-4 {
         margin-top: 50px;
         padding: 0 30px;
-        .image {
-          height: 44px;
-          img {
-            height: 100%;
-          }
-        }
+        
         section {
           .header {
             line-height: 16px;

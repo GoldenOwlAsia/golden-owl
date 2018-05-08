@@ -11,6 +11,12 @@ $content-color: #c1b8ab;
   margin: 0 0;
 }
 
+.image {
+  height: 44px;
+  img {
+    height: 100%;
+  }
+}
 section {
   font-family: 'Dosis', sans-serif;
   .header {

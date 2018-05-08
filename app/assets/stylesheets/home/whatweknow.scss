@@ -1,4 +1,19 @@
 .whatweknow-container {
   min-height: 100vh;
   text-align: center;
+  background-color: #f3efe6;
+  .technologies {
+    .row {
+      .col-sm-3 {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.whatweknow-container > section {
+    padding-top: 60px;
+    .content {
+      width: 33.333%;
+    }
 }
