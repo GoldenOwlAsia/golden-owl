@@ -1,9 +1,13 @@
-.text-dark-brown {
-  color: $dark-brown !important;
+.container-fluid > .navbar-header {
+  margin-left: 0;
 }
 
 .row {
   margin: 0 0;
+}
+
+.text-dark-brown {
+  color: $dark-brown !important;
 }
 
 .image {

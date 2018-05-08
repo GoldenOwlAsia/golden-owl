@@ -12,7 +12,7 @@
     border-radius: 0;
     min-height: initial;
     margin: 0;
-
+    height: $header-height;
     .navbar-nav {
       li { 
         a {
@@ -43,7 +43,6 @@
     #logo {
       height: 12px;
       margin: 17px 0;
-      padding-left: 15px;
     }
   }
 }
