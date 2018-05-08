@@ -1,15 +1,7 @@
-$font-color: #c1b8ab;
-
 .whatwedo-container {
   min-height: 100vh;
   text-align: center;
-  box-sizing: border-box;
-  .content {
-    color: $font-color;
-    font-size: 12px;
-    line-height: 12px;
-  }
-
+  
   .fields {
     .row {
       .col-sm-4 {

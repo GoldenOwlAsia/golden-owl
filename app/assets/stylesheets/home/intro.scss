@@ -1,4 +1,4 @@
-$font-color: #6f624f;
+$content-color: #6f624f;
 
 .intro-container {
   min-height: calc(100vh - 46px);
@@ -6,11 +6,12 @@ $font-color: #6f624f;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
   background: url("intro-background.png") no-repeat center;
   background-size: cover;
+  
   section {
     .content {
+      color: $content-color;
       width: 50%;
     }
   }
@@ -18,14 +19,14 @@ $font-color: #6f624f;
     margin-top: 20px;
     .btn {
       height: 40px;
-      color: $font-color;
+      color: $content-color;
 
       font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       font-weight: 500;
       
       background-color: Transparent;
-      border: 2px $font-color solid;
+      border: 2px $content-color solid;
       border-radius: 0;
     }
   }
