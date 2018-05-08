@@ -1,0 +1,34 @@
+.contactus-container {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f3efe6;
+
+  .row.info {
+    margin-bottom: 45px;
+  }
+
+  .row {
+    section {
+      text-align: left;
+
+      .header {
+        line-height: 16px;
+        margin-top: 30px;
+        font-size: 16px;
+      }
+    }
+  }
+  .btn {
+    padding: 9px 19px;
+    color: #ffffff;
+    background-color: #6f624f;
+  }
+}
+
+#contact_message {
+    height: 112px;
+}
+
+.contactus-container > section {
+  padding-top: 60px;
+}
