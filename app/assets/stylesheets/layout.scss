@@ -1,5 +1,8 @@
 #home-container {
   margin-left: $sidebar-width;
+  position: absolute;
+  top: 0;
+  z-index: -10;
 }
 
 #home-container > div {
@@ -9,9 +12,7 @@
 
 .shared-header-container {
   margin-left: $sidebar-width;
-
   .navbar {
-
     background: url("header-background.png") no-repeat center center;
     border: 0;
     border-radius: 0;
@@ -29,6 +30,9 @@
           padding-bottom: 17px;
           padding-top:    17px;
         }
+      }
+      li.active {
+        background-color: #ffffff;
       }
     }
 
@@ -82,7 +86,7 @@
         padding: 11px 13px;
         line-height: 0;
         border-bottom: $bright-gray 1px solid;
-
+        
         img.nav-icon {
           width: 100%;
         }
