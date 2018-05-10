@@ -2,18 +2,19 @@
   min-height: 100vh;
   text-align: center;
   background-color: $middle-gray;
-  .technologies {
-    .row {
-      .col-sm-3 {
-        margin-top: 50px;
-      }
-    }
-  }
-}
-
-.whatweknow-container > section {
+  
+  .container > section {
     .content {
       width: 33.333%;
       font-size: 14px;
     }
+  }
+
+  .technologies {
+    .row {
+      .col-md-3 {
+        margin-top: 50px;
+      }
+    }
+  }
 }

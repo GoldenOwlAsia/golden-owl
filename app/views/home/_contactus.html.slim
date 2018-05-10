@@ -1,41 +1,44 @@
 .contactus-container id='contactus'
-  section
-    .header 
-      | Contact us
-    .content
-      | Contact us for further information
-  .row.info
-    .col-md-10.col-md-offset-1
-      .col-sm-6
+  .container-fluid
+    .row
+      .col-sm-4.col-sm-offset-4
         section
-          .header
-            | Summary
+          .header 
+            | Contact us
           .content
-            | Lorem ipsum dolor sit amet, pro commune offendit eu. Vel everti detracto petentium ea, in agam malorum delectus sed. His quod quodsi patrioque id, usu ad habeo dicam dictas, pro ne argumentum neglegentur. 
-      .col-sm-3
-        section
-          .header
-            | Address
-          .content
-            | 40E Ngo Duc Ke Street, District 1
-            br
-            | Ben Nghe Ward, HCMC, Vietnam
-      .col-sm-3
-        section
-          .content.contact.text-dark-brown
-            = fa_icon 'phone-square'
-            | &nbsp;
-            | 0000 0000
-            br
-            = fa_icon 'envelope'
-            | &nbsp;
-            | admin@goldenowl.asia
-            br
-            | www.goldenowl.asia 
-  .row
-    .col-md-10.col-md-offset-1
-      .col-sm-7.map id='map'
-        iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=40E%20Ng%C3%B4%20%C4%90%E1%BB%A9c%20K%E1%BA%BF%2C%20B%E1%BA%BFn%20Ngh%C3%A9%20ward%2C%20District%201%2C%20Ho%20Chi%20Minh%20city%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%20700000&key=AIzaSyB2cmeRvXJwWqMw0SwC6o5nVuKV87tCkjw" allowfullscreen
+            | Contact us for further information
+    .row.info
+      .col-md-10.col-md-offset-1
+        .col-sm-6
+          section
+            .header
+              | Summary
+            .content
+              | Lorem ipsum dolor sit amet, pro commune offendit eu. Vel everti detracto petentium ea, in agam malorum delectus sed. His quod quodsi patrioque id, usu ad habeo dicam dictas, pro ne argumentum neglegentur. 
+        .col-sm-3
+          section
+            .header
+              | Address
+            .content
+              | 40E Ngo Duc Ke Street, District 1
+              br
+              | Ben Nghe Ward, HCMC, Vietnam
+        .col-sm-3
+          section
+            .content.contact.text-dark-brown
+              = fa_icon 'phone-square'
+              | &nbsp;
+              | 0000 0000
+              br
+              = fa_icon 'envelope'
+              | &nbsp;
+              | admin@goldenowl.asia
+              br
+              | www.goldenowl.asia 
+    .row
+      .col-md-10.col-md-offset-1
+        .col-sm-7.map id='map'
+          iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=40E%20Ng%C3%B4%20%C4%90%E1%BB%A9c%20K%E1%BA%BF%2C%20B%E1%BA%BFn%20Ngh%C3%A9%20ward%2C%20District%201%2C%20Ho%20Chi%20Minh%20city%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%20700000&key=AIzaSyB2cmeRvXJwWqMw0SwC6o5nVuKV87tCkjw" allowfullscreen
 
-      .col-sm-5.contact-fields
-        = render '/contacts/form', contact: Contact.new
+        .col-sm-5.contact-fields
+          = render '/contacts/form', contact: Contact.new

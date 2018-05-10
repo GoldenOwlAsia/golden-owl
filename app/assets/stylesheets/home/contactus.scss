@@ -3,11 +3,14 @@
   text-align: center;
   background-color: $middle-gray;
 
-  .row.info {
-    margin-bottom: 45px;
+  .container-fluid > section {
+    .content {
+      font-size: 14px;
+    }
   }
 
-  .row {
+  .row.info {
+    margin-bottom: 45px;
     section {
       text-align: left;
 
@@ -34,16 +37,11 @@
     height: 112px;
 }
 
-#map {  
+#map {
+  overflow: hidden;
   iframe {
     min-width: 100%;
-    min-height: 280px;
+    height: 280px;
     margin-bottom: 17px;
-  }
-}
-
-.contactus-container > section {
-  .content {
-    font-size: 14px;
   }
 }
