@@ -42,6 +42,7 @@
 }
 
 section {
+  padding: 0 15px;
   font-family: 'Dosis', sans-serif;
   .header {
     color: $light-brown;
@@ -55,6 +56,5 @@ section {
     font-size: 12px;
     font-weight: 500;
     margin: 15px auto;
-    padding: 0 10px;
   }
 }

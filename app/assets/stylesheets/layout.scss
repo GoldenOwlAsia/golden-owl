@@ -1,7 +1,8 @@
 #home-container {
-  margin-left: $sidebar-width;
+  //margin-left: $sidebar-width;
   position: absolute;
   top: 0;
+  left: $sidebar-width;
   z-index: -10;
 }
 
@@ -94,12 +95,17 @@
 
     ul.nav {
       text-align: center;
+      border-top: $bright-gray 1px solid;
       li {
         border-bottom: $bright-gray 1px solid;
         a.nav-link {
           height: 40px;
           padding: 11px 13px;
           line-height: 16px;
+
+          &:focus, &:hover {
+            background-color: $lemon-yellow;
+          }
         }
         
         img.nav-icon {
@@ -109,7 +115,6 @@
 
       li.nav-item.active {
         background-color: $lemon-yellow;
-        border: 0;
       }
     }
   }
