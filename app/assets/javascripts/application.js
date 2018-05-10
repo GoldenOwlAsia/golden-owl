@@ -19,7 +19,7 @@
 //= require bootstrap.min
 
 $(document).ready(function() {
-  //ref: http://jsfiddle.net/mekwall/up4nu/
+  //Source: http://jsfiddle.net/mekwall/up4nu/
   var lastId,
     topMenu = $('.shared-header-container'),
     topMenuHeight = topMenu.outerHeight(),

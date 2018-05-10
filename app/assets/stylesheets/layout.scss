@@ -19,18 +19,34 @@
     min-height: initial;
     margin: 0;
     height: $header-height;
-    .navbar-nav {
-      li {
+
+    ul.navbar-nav {
+      margin: 0 -15px;
+      li.nav-item {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
         a.nav-link {
           color: #8f8b86;
-          font-family: "Montserrat", sans-serif;
-          font-size: 11px;
-          font-weight: 500;
           line-height: 12px;
           padding-bottom: 17px;
           padding-top:    17px;
+
+          &:hover {
+            color: #8b7d68;
+            background-color: #eeeeee;
+          }
         }
-        
+      }
+
+      li.nav-item.active {
+        font-weight: 600;
+          a.nav-link {
+            color: #8b7d68;
+            background-color: transparent;
+            border-top: #ffd44d 3px solid;
+            padding-top:    14px;
+          }
       }
     }
 
