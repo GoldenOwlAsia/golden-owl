@@ -17,11 +17,12 @@
 //= require_tree
 //= require ckeditor/init
 //= require bootstrap.min
-
-
+//= require jquery.fullPage
+//= require scrolloverflow
 $(document).ready(function() {
-  fancy_scrolling();
+  //fancy_scrolling();
+
+  $('#fullpage').fullpage({
+    anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage']
+  });
 });
-
-
-    

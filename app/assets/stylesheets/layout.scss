@@ -1,7 +1,7 @@
 #home-container {
   //margin-left: $sidebar-width;
-  position: absolute;
-  top: 0;
+  //position: absolute;
+  // top: $header-height;
   left: $sidebar-width;
   z-index: -10;
 }
@@ -20,7 +20,8 @@
     min-height: initial;
     margin: 0;
     height: $header-height;
-
+    z-index: 20;
+    
     ul.navbar-nav {
       margin: 0 -15px;
       li.nav-item {
@@ -114,19 +115,15 @@
 
           .nav-text {
             width: 110px;
-            visibility: hidden;
+            display: none;
           }
 
-          &:hover {
+          &:hover, &:focus {
             background-color: $lemon-yellow;
             .nav-text {
               color: #ffffff;
-              visibility: visible;
+              display: inline-block;
             }
-          }
-
-          &:focus {
-            background-color: transparent;
           }
         } // end a.nav-link
 
@@ -141,11 +138,11 @@
       }
 
       li.nav-item.active {
-        background-color: $lemon-yellow;
         a.nav-link {
+          background-color: $lemon-yellow;
           .nav-text {
             color: #ffffff;
-            visibility: visible;
+            display: inline-block;
           }
         }
       }
