@@ -24,14 +24,13 @@ function fancy_scrolling() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
-            $target.focus();
+            $target.blur();
             if ($target.is(":focus")) { // Checking if the target was focused
-              $target.blur();
               return false;
             } 
             else {
               // $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
+              // $target.focus(); // Set focus again
             };
           });
         }

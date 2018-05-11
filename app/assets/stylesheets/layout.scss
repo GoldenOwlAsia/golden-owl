@@ -94,27 +94,61 @@
     align-items: center;
 
     ul.nav {
-      text-align: center;
-      border-top: $bright-gray 1px solid;
-      li {
-        border-bottom: $bright-gray 1px solid;
+      li.nav-item {
         a.nav-link {
-          height: 40px;
-          padding: 11px 13px;
-          line-height: 16px;
+          text-decoration: none;
+          padding: 0;
+          width: 154px;
+          line-height: 20px;
 
-          &:focus, &:hover {
-            background-color: $lemon-yellow;
+          .nav-text, .nav-icon {
+            text-align: center;
+            display: inline-block;
           }
-        }
-        
-        img.nav-icon {
-          width: 100%;
+
+          .nav-icon {
+            padding: 10px 0;
+            width: 44px;
+            max-height: 40px;
+            border-top: $light-gray 1px solid;
+          }
+
+          .nav-text {
+            width: 110px;
+            visibility: hidden;
+          }
+
+          &:hover {
+            background-color: $lemon-yellow;
+            .nav-text {
+              color: #ffffff;
+              visibility: visible;
+            }
+          }
+
+          &:focus {
+            background-color: transparent;
+          }
+        } // end a.nav-link
+
+        // The last nav-item has 1 extra border-bottom
+        &:last-child {
+          a.nav-link {
+            .nav-icon {
+              border-bottom: $light-gray 1px solid;
+            }
+          }
         }
       }
 
       li.nav-item.active {
         background-color: $lemon-yellow;
+        a.nav-link {
+          .nav-text {
+            color: #ffffff;
+            visibility: visible;
+          }
+        }
       }
     }
   }
