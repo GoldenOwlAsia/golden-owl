@@ -22,9 +22,34 @@
 $(document).ready(function() {
   $('#home-container').fullpage({
     anchors:['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact'],
-    // navigation: true,
-    menu: '#sidebar',
     menu: '#navbar',
     scrollBar: true,
   });
+
+  // add or remove active class for sidebar element
+  // base on current section
+  function activeClass(selector) {
+    var sideBar = $(selector);
+    var url = window.location.href;
+    var id = url.substring(url.lastIndexOf('/') + 1);
+
+    sideBar.each(function() { 
+      if ($(this).attr('href') == id) {
+        $(this).addClass('active');
+      }
+      else {
+        $(this).removeClass('active');
+      }
+      $(this).blur();
+    });
+  }
+
+  $(window).load(function() {
+    activeClass('.sidebar ul li a');
+  });
+
+  $(window).scroll(function() {
+    activeClass('.sidebar ul li a');
+  });
+
 });

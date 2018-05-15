@@ -102,10 +102,15 @@
           height: 40px;
           line-height: 20px;
           padding: 10px 0;
-          &:hover, &:focus {
+          &:hover, &:focus, .active {
             background-color: $lemon-yellow;
           }
         }
+
+        a.active {
+          background-color: $lemon-yellow;
+        }
+
         // The last nav-item has 1 extra border-bottom
         &:last-child {
           border-bottom: $light-gray 1px solid;
@@ -115,14 +120,10 @@
       li.nav-item.active {
         a {
           background-color: $lemon-yellow;
-          .nav-text {
-            color: #ffffff;
-            display: inline-block;
-          }
         }
       }
-    }
-  }
+    } // end ul.nav
+  } //end sidebar
 }
 
 //   a.nav-link {
