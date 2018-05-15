@@ -20,9 +20,9 @@
 //= require jquery.fullPage
 //= require scrolloverflow
 $(document).ready(function() {
-  //fancy_scrolling();
-
-  $('#fullpage').fullpage({
-    anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage']
+  $('#home-container').fullpage({
+    anchors:['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact'],
+    
+    scrollBar: true,
   });
 });

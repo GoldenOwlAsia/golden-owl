@@ -1,26 +1,21 @@
 #home-container {
-  //margin-left: $sidebar-width;
-  //position: absolute;
-  // top: $header-height;
-  left: $sidebar-width;
-  z-index: -10;
-}
-
-#home-container > div {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-left: $sidebar-width;
 }
 
 .shared-header-container {
-  margin-left: $sidebar-width;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  height: $header-height;
+  padding-left: $sidebar-width;
+  width: 100%;
+  
   .navbar {
-    background: url("header-background.png") no-repeat center center;
+    background: url("header-background.png") no-repeat top center;
     border: 0;
     border-radius: 0;
     min-height: initial;
     margin: 0;
-    height: $header-height;
-    z-index: 20;
     
     ul.navbar-nav {
       margin: 0 -15px;
