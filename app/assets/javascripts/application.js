@@ -22,7 +22,9 @@
 $(document).ready(function() {
   $('#home-container').fullpage({
     anchors:['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact'],
-    
+    // navigation: true,
+    menu: '#sidebar',
+    menu: '#navbar',
     scrollBar: true,
   });
 });
