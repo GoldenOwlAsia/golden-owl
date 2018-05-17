@@ -96,30 +96,48 @@
     ul.nav {
       width: $sidebar-width;
       li.nav-item {
-        border-top: $light-gray 1px solid;
+        width: 154px;
+        height: 40px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 12px;
+
         a {
+          display: inline-block;
           text-align: center;
-          height: 40px;
-          line-height: 20px;
           padding: 10px 0;
-          &:hover, &:focus, .active {
-            background-color: $lemon-yellow;
-          }
         }
 
-        a.active {
-          background-color: $lemon-yellow;
+        .nav-icon {
+          width: $sidebar-width;
+          border-top: $light-gray 1px solid;
+          &:hover + .nav-text, &:hover {
+            background-color: $lemon-yellow;
+            display: inline-block;
+          }
+        }
+        
+        .nav-text {
+          color: #ffffff;
+          width: 110px;
+          display: none;
         }
 
         // The last nav-item has 1 extra border-bottom
         &:last-child {
-          border-bottom: $light-gray 1px solid;
+          .nav-icon {
+            border-bottom: $light-gray 1px solid;
+          }
         }
       }
       
       li.nav-item.active {
         a {
           background-color: $lemon-yellow;
+        }
+        .nav-text {
+          display: inline-block;
         }
       }
     } // end ul.nav
