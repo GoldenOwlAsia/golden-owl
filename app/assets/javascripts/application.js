@@ -17,8 +17,8 @@
 //= require_tree
 //= require ckeditor/init
 //= require bootstrap.min
-//= require jquery.fullPage
 //= require scrolloverflow
+//= require jquery.fullPage
 
 //add or remove active class for sidebar element
 //base on current section
@@ -63,7 +63,7 @@ $(document).ready(function() {
     anchors: anchors,
     menu: '#navbar',
     scrollBar: true,
-    // scrollOverflow: true,
+    scrollOverflow: true,
     
     onLeave: function(index, nextIndex, direction){
       // index and nextIndex of sections start from 1 !!!
@@ -79,4 +79,8 @@ $(document).ready(function() {
     activeClass(sideBar, currentAnchor);
   });
 
+  $('.navbar-toggle.collapsed').click(function() {
+    $('#navbar').css("height", "100vh");
+  });
+  
 });

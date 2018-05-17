@@ -10,7 +10,7 @@
 .shared-header-container {
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 100000;
   height: $header-height;
   padding-left: $sidebar-width;
   width: 100%;
@@ -36,7 +36,9 @@
 
           &:hover {
             color: #8b7d68;
-            background-color: #eeeeee;
+            background-color: transparent;
+            border-top: #ffd44d 3px solid;
+            padding-top:    14px;
           }
         }
       }
@@ -62,7 +64,9 @@
     }
 
     .navbar-collapse {
-      background-color: rgba(243,240,229,0.64);
+      ul {
+        background-color: rgba(243,240,229,0.8);
+      }
     }
 
     #logo {
