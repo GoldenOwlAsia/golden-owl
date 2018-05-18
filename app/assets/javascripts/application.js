@@ -78,9 +78,4 @@ $(document).ready(function() {
     var currentAnchor = url.substring(url.lastIndexOf('/') + 1);
     activeClass(sideBar, currentAnchor);
   });
-
-  $('.navbar-toggle.collapsed').click(function() {
-    $('#navbar').css("height", "100vh");
-  });
-  
 });
