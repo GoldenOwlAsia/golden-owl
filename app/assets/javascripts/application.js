@@ -27,7 +27,7 @@ function activeClass(nav, currentAnchor) {
     currentAnchor = "#home";
 
   nav.each(function() { 
-    var imgSrc = $("img", this).attr('src'),
+    var imgSrc = $("img", this).first().attr('src'),
         active = 'active-',
 
         lastSlashIdx = imgSrc.lastIndexOf('/'),
@@ -50,8 +50,7 @@ function activeClass(nav, currentAnchor) {
       $(this).parent().removeClass('active');
     }
 
-    $("img", this).attr('src', newName);
-    $(this).blur();
+    $("img", this).first().attr('src', newName);
   });
 }
 
