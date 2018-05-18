@@ -14,8 +14,7 @@
       = f.text_field :email, placeholder: 'Email*', class: 'form-control', required: 'true', type: 'email'
     .form-group
       = f.text_area :message, placeholder: 'Message', class: 'form-control', required: 'true', type: 'text'
-    .row
-      .form-group.text-left   
+    .form-group.text-left   
         = f.submit 'SEND US', class: 'btn'
         - flash.each do |key, value|
           javascript: 

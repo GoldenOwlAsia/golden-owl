@@ -61,9 +61,9 @@ $(document).ready(function() {
   $('#home-container').fullpage({
     anchors: anchors,
     menu: '#navbar',
-    scrollBar: true,
     scrollOverflow: true,
-    
+    verticalCentered: false,
+
     onLeave: function(index, nextIndex, direction){
       // index and nextIndex of sections start from 1 !!!
       var currentAnchor = '#' + anchors[nextIndex - 1];

@@ -2,9 +2,10 @@
   padding-left: $sidebar-width;
 }
 
-.fp-tableCell {
-  box-sizing: border-box;
-  padding: $header-height 0;
+#home-container > div {
+  .container-fluid {
+    padding: 92px 15px;
+  }
 }
 
 @media (min-width: $grid-float-breakpoint) {
