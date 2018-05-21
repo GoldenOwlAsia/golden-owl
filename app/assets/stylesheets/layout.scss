@@ -7,10 +7,3 @@
     padding: 92px 15px;
   }
 }
-
-.contactus-container {
-  .container-fluid {
-    height: $footer-height;
-    height: calc(100% - #{$footer-height});
-  }
-}

@@ -1,8 +1,11 @@
 .contactus-container {
-  // min-height: 100vh;
   text-align: center;
   background-color: $middle-gray;
 
+  .container-fluid {
+    height: calc(100% - #{$footer-height});
+  }
+  
   .container-fluid > section {
     .content {
       font-size: 14px;
@@ -35,10 +38,8 @@
 }
 
 #map {
-  // overflow: hidden;
   iframe {
-    min-width: 100%;
+    width: 100%;
     height: 280px;
-    margin-bottom: 17px;
   }
 }
