@@ -26,7 +26,7 @@
     min-height: initial;
     margin: 0;
     .navbar-collapse {
-      background-color: rgba(243,240,229,0.8);
+      background-color: rgba(243,240,229,0.92);
 
       ul.navbar-nav {
         margin: 0 -15px;
@@ -66,6 +66,10 @@
     .navbar-toggle {
       margin-top: 6px;
       margin-bottom: 6px;
+      border: 0;
+      &:hover {
+        background-color: initial;
+      }
     }
 
     #logo {
