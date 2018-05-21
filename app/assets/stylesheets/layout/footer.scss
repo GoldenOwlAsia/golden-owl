@@ -1,4 +1,6 @@
 .shared-footer-container {
+  position: relative;
+  bottom: $footer-height;
   width: 100%;
   background-color: $light-brown;
   padding: 15px 0;
