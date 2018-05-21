@@ -51,6 +51,7 @@ function activeClass(nav, currentAnchor) {
     }
 
     $("img", this).first().attr('src', newName);
+    $(this).blur();
   });
 }
 
