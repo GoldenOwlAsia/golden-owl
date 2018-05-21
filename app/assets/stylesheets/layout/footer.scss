@@ -1,9 +1,7 @@
 .shared-footer-container {
-  position: relative;
-  bottom: $footer-height;
   width: 100%;
   background-color: $light-brown;
-  padding: 15px 0;
+  padding: 15px 0!important;
   .copyright {
     line-height: 20px;
     font-size: 13px;
