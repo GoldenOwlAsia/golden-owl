@@ -63,7 +63,6 @@ $(document).ready(function() {
     menu: '#navbar',
     scrollOverflow: true,
     verticalCentered: false,
-
     onLeave: function(index, nextIndex, direction){
       // index and nextIndex of sections start from 1 !!!
       var currentAnchor = '#' + anchors[nextIndex - 1];
