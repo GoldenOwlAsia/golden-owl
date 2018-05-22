@@ -6,8 +6,4 @@ module ApplicationHelper
   def google_api_key
     Rails.application.secrets.google_api_key
   end
-
-  def a(name)
-    "cuong"
-  end
 end
