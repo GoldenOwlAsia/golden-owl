@@ -26,7 +26,7 @@ function activeClass(nav, currentAnchor) {
   if (!currentAnchor)
     currentAnchor = "#home";
 
-  nav.each(function() { 
+  nav.each(function() {
     var imgSrc = $("img", this).first().attr('src'),
         active = 'active-',
 
@@ -56,7 +56,7 @@ function activeClass(nav, currentAnchor) {
 }
 
 $(document).ready(function() {
-  var anchors = ['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact']
+  var anchors = ['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact'];
   var sideBar = $('.sidebar ul li a.nav-icon');
 
   $('#home-container').fullpage({
@@ -71,7 +71,7 @@ $(document).ready(function() {
       activeClass(sideBar, currentAnchor);
     }
   });
-  
+
 
   $(window).load(function() {
     var url = window.location.href;
