@@ -47,6 +47,12 @@
     padding: 10px 0;
   }
 
+  .nav-text {
+    color: $white;
+    display: none;
+    width: 110px;
+  }
+
   // The last nav-item has 1 extra border-bottom
   &:last-child {
     .nav-icon {
@@ -55,32 +61,24 @@
   }
 }
 
-.sidebar li.nav-item {
-  .nav-text {
-  color: $white;
-  display: none;
-  width: 110px;
-  }
-}
+.nav-icon {
+  border-top: $light-gray 1px solid;
+  width: $sidebar-width;
 
-.sidebar li.nav-item {
-  .nav-icon {
-    width: $sidebar-width;
-    border-top: $light-gray 1px solid;
-    &:hover, &:focus {
-      background-color: $lemon-yellow;
-
-      .overlay {
-        opacity: 1;
-      }
-    }
+  &:hover,
+  &:focus {
+    background-color: $lemon-yellow !important;
 
     .overlay {
-      opacity: 0;
-      padding: 10px 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
+      opacity: 1;
     }
+  }
+
+  .overlay {
+    opacity: 0;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
