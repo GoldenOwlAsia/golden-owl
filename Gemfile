@@ -34,7 +34,7 @@ gem 'less-rails'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 
-gem 'dotenv-rails', groups: %i[development, test]
+gem 'dotenv-rails', groups: %i[development test]
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
