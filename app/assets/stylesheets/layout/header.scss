@@ -67,15 +67,14 @@ ul.navbar-nav {
         padding-top:    14px;
       }
     }
-  }
-
-  li.nav-item.active {
-    font-weight: 600;
+    &.active {
+      font-weight: 600;
       a.nav-link {
         color: #8b7d68;
         background-color: transparent;
         border-top: #ffd44d 3px solid;
         padding-top:    14px;
       }
+    }
   }
 }

@@ -30,11 +30,11 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'font-awesome-sass', '~> 4.4.0'
 
 # Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'less-rails' 
+gem 'less-rails'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', groups: %i[development, test]
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -18,12 +18,10 @@
     min-height: calc(100vh - 46px);
     display: flex;
     align-items: center;
-  }
-}
 
-.sidebar {
-  ul.nav {
-    width: $sidebar-width;
+    ul.nav {
+      width: $sidebar-width;
+    }
   }
 }
 
@@ -34,6 +32,14 @@
   font-weight: 500;
   line-height: 20px;
   font-size: 12px;
+  &.active {
+    a {
+    background-color: $lemon-yellow;
+    }
+    .nav-text {
+      display: inline-block;
+    }
+  }
 
   a {
     display: inline-block;
@@ -71,14 +77,5 @@
     .nav-icon {
       border-bottom: $light-gray 1px solid;
     }
-  }
-}
-
-.sidebar li.nav-item.active {
-  a {
-    background-color: $lemon-yellow;
-  }
-  .nav-text {
-    display: inline-block;
   }
 }
