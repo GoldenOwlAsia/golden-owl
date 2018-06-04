@@ -1,0 +1,13 @@
+.shared-footer-container {
+  width: 100%;
+  background-color: $light-brown;
+  padding: 15px 0!important;
+  .copyright {
+    line-height: 20px;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+}
