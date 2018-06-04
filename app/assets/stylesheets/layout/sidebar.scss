@@ -39,6 +39,12 @@
     .nav-text {
       display: inline-block;
     }
+
+    .nav-icon {
+      .overlay {
+        opacity: 1;
+      }
+    }
   }
 
   a {
