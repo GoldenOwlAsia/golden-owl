@@ -20,62 +20,14 @@
 //= require scrolloverflow
 //= require jquery.fullPage
 
-//add or remove active class for sidebar element
-//base on current section
-function activeClass(nav, currentAnchor) {
-  if (!currentAnchor)
-    currentAnchor = "#home";
-
-  nav.each(function() {
-    var imgSrc = $("img", this).first().attr('src'),
-        active = 'active-',
-
-        lastSlashIdx = imgSrc.lastIndexOf('/'),
-        base = imgSrc.substring(0, lastSlashIdx + 1),
-        imgName = imgSrc.substring(lastSlashIdx + 1),
-        newName = imgSrc;
-
-    if ($(this).attr('href') == currentAnchor) {
-      if (imgSrc.search(active) == -1) {
-        newName = base + active + imgName;
-      }
-      $(this).parent().addClass('active');
-    }
-
-    else {
-      // not active section but have active in name
-      if (imgSrc.search(active) != -1) {
-        newName = base + imgName.substring(active.length);
-      }
-      $(this).parent().removeClass('active');
-    }
-
-    $("img", this).first().attr('src', newName);
-    $(this).blur();
-  });
-}
-
 $(document).ready(function() {
   var anchors = ['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact', 'contact'];
   var sideBar = $('.sidebar ul li a.nav-icon');
 
   $('#home-container').fullpage({
     anchors: anchors,
-    menu: '#navbar',
+    menu: '.menu',
     scrollOverflow: true,
     paddingTop: '46px',
-
-    onLeave: function(index, nextIndex, direction){
-      // index and nextIndex of sections start from 1 !!!
-      var currentAnchor = '#' + anchors[nextIndex - 1];
-      activeClass(sideBar, currentAnchor);
-    }
-  });
-
-
-  $(window).load(function() {
-    var url = window.location.href;
-    var currentAnchor = url.substring(url.lastIndexOf('/') + 1);
-    activeClass(sideBar, currentAnchor);
   });
 });
