@@ -100,6 +100,10 @@ GEM
       warden (~> 1.2.3)
     devise-bootstrap-views (0.0.8)
     diff-lcs (1.2.5)
+    dotenv (2.4.0)
+    dotenv-rails (2.4.0)
+      dotenv (= 2.4.0)
+      railties (>= 3.2, < 6.0)
     erubis (2.7.0)
     execjs (2.7.0)
     font-awesome-rails (4.6.3.0)
@@ -286,6 +290,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   devise-bootstrap-views
+  dotenv-rails
   font-awesome-rails
   font-awesome-sass (~> 4.4.0)
   impressionist
@@ -314,7 +319,7 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 RUBY VERSION
-   ruby 2.3.0p0
+   ruby 2.3.1p112
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

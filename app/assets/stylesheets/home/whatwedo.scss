@@ -1,0 +1,22 @@
+.whatwedo-container {
+  // min-height: 100vh;
+  text-align: center;
+  .fields {
+    .row {
+      .col {
+        section {
+          .header {
+            line-height: 16px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.whatwedo-container > section {
+    .content {
+      font-size: 14px;
+    }
+}

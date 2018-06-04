@@ -1,0 +1,45 @@
+.section.contactus-container id='contactus'
+  .container-fluid
+    .row
+      .col-sm-4.col-sm-offset-4
+        section
+          .header
+            = t 'contact_us.title'
+          .content
+            = t 'contact_us.description'
+    .row.info
+      .col-md-10.col-md-offset-1
+        .col.col-sm-6
+          section
+            .header
+              = t 'contact_us.Summary'
+            .content
+              = t 'contact_us.summary.content'
+        .col.col-sm-3
+          section
+            .header
+              = t 'contact_us.Address'
+            .content
+              = t 'contact_us.address.line_1'
+              br
+              = t 'contact_us.address.line_2'
+        .col.col-sm-3
+          section
+            .content.contact.text-dark-brown
+              = fa_icon 'phone-square'
+              | &nbsp;
+              = t 'contact_us.phone'
+              br
+              = fa_icon 'envelope'
+              | &nbsp;
+              = t 'contact_us.email'
+              br
+              = t 'contact_us.website'
+    .row
+      .col-md-10.col-md-offset-1
+        .col.col-sm-7.map id='map'
+          iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=40E%20Ng%C3%B4%20%C4%90%E1%BB%A9c%20K%E1%BA%BF%2C%20B%E1%BA%BFn%20Ngh%C3%A9%20ward%2C%20District%201%2C%20Ho%20Chi%20Minh%20city%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%20700000&key=#{google_api_key}" allowfullscreen
+
+        .col.col-sm-5.contact-fields
+          = render '/contacts/form', contact: Contact.new
+

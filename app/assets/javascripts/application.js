@@ -17,4 +17,17 @@
 //= require_tree
 //= require ckeditor/init
 //= require bootstrap.min
+//= require scrolloverflow
+//= require jquery.fullPage
 
+$(document).ready(function() {
+  var anchors = ['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact', 'contact'];
+  var sideBar = $('.sidebar ul li a.nav-icon');
+
+  $('#home-container').fullpage({
+    anchors: anchors,
+    menu: '.menu',
+    scrollOverflow: true,
+    paddingTop: '46px',
+  });
+});

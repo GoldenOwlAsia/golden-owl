@@ -1,0 +1,41 @@
+.contactus-container {
+  text-align: center;
+  background-color: $middle-gray;
+  
+  .container-fluid > section {
+    .content {
+      font-size: 14px;
+    }
+  }
+
+  .row.info {
+    section {
+      text-align: justify;
+      .header {
+        line-height: 16px;
+        font-size: 16px;
+      }
+
+      .content.contact {
+        margin-top: 34px;
+      }
+    }
+  }
+
+  .btn {
+    padding: 9px 19px;
+    color: #ffffff;
+    background-color: #6f624f;
+  }
+}
+
+#contact_message {
+    height: 112px;
+}
+
+#map {
+  iframe {
+    width: 100%;
+    height: 280px;
+  }
+}
