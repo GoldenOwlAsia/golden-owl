@@ -1,40 +1,40 @@
-.section.contactus-container id='contactus' 
+.section.contactus-container id='contactus'
   .container-fluid
     .row
       .col-sm-4.col-sm-offset-4
         section
-          .header 
-            | Contact us
+          .header
+            = t 'contact_us.title'
           .content
-            | Contact us for further information
+            = t 'contact_us.description'
     .row.info
       .col-md-10.col-md-offset-1
         .col.col-sm-6
           section
             .header
-              | Summary
+              = t 'contact_us.Summary'
             .content
-              | Lorem ipsum dolor sit amet, pro commune offendit eu. Vel everti detracto petentium ea, in agam malorum delectus sed. His quod quodsi patrioque id, usu ad habeo dicam dictas, pro ne argumentum neglegentur. 
+              = t 'contact_us.summary.content'
         .col.col-sm-3
           section
             .header
-              | Address
+              = t 'contact_us.Address'
             .content
-              | 40E Ngo Duc Ke Street, District 1
+              = t 'contact_us.address.line_1'
               br
-              | Ben Nghe Ward, HCMC, Vietnam
+              = t 'contact_us.address.line_2'
         .col.col-sm-3
           section
             .content.contact.text-dark-brown
               = fa_icon 'phone-square'
               | &nbsp;
-              | 0000 0000
+              = t 'contact_us.phone'
               br
               = fa_icon 'envelope'
               | &nbsp;
-              | admin@goldenowl.asia
+              = t 'contact_us.email'
               br
-              | www.goldenowl.asia 
+              = t 'contact_us.website'
     .row
       .col-md-10.col-md-offset-1
         .col.col-sm-7.map id='map'
@@ -42,4 +42,4 @@
 
         .col.col-sm-5.contact-fields
           = render '/contacts/form', contact: Contact.new
-    
+

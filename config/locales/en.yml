@@ -20,27 +20,27 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  home:
+  intro:
     title: 'We are hardcode Web-App Developers'
     description: ''
-  # what_we_do:
-  #   title: 'What we do'
-  #   description: 'We are experts in IT field, we believe to bring you best solutions for your ideas.'
-  #   fields_1:
-  #     title: 'Web Development'
-  #     content: ''
-  #   fields_2:
-  #     title: 'Mobile Development'
-  #     content: ''
-  #   fields_3:
-  #     title: 'UX UI Design'
-  #     content: ''
-  #   fields_4:
-  #     title: 'Project Manager'
-  #     content: ''
-  #   fields_5:
-  #     title: 'Tech Staffing'
-  #     content: ''
+  what_we_do:
+    title: 'What we do'
+    description: 'We are experts in IT field, we believe to bring you best solutions for your ideas.'
+    field_1:
+      title: 'Web Development'
+      content: ''
+    field_2:
+      title: 'Mobile Development'
+      content: ''
+    field_3:
+      title: 'UX UI Design'
+      content: ''
+    field_4:
+      title: 'Project Manager'
+      content: ''
+    field_5:
+      title: 'Tech Staffing'
+      content: ''
   what_we_know:
     title: 'What we know'
     description: 'We only do what we know best. Our technologies cover every component needed to build and support a complete end to end software solution.'
@@ -48,14 +48,23 @@ en:
   who_we_are:
     title: 'Who we are'
     description: 'We commit to provide impactful solution for your technical issues.'
-    creative: "We turn our client's creative ideas into live digital products."
-    proactive: "We are eager to show our client's new technology that will advance their MVP."
-    responsible: 'We pride ourselves in responding to clients and completing tasks.'
+    qualities:
+      creative:
+        title: 'Creative'
+        content: "We turn our client's creative ideas into live digital products."
+      proactive:
+        title: 'Proactive'
+        content: "We are eager to show our client's new technology that will advance their MVP."
+      responsible:
+        title: 'Responsible'
+        content: 'We pride ourselves in responding to clients and completing tasks.'
     experience:
+      title: 'Experience'
       line_1: 'We are a responsible and professional team based in Ho Chi Minh City, Vietnam, specializing in web and mobile development with the latest Ruby on Rails and Javascript technologies.'
       line_2: 'We are a group of creative experts who build full-stack solutions for our customers in multiple platforms with highly scalable back-ends and rich media <front-ends class=""></front-ends>'
       line_3: 'We provide fast, reliable, and professional software outsourcing, IT service consulting, website designing, and automation testing.'
     mission:
+      title: 'Mission'
       line_1: "We are a HCMC-Singapore joint venture group focusing on helping customers turn their ideas into websites. Our client's satisfaction will always be our priority."
       line_2: "Our jobs is to provide professional and impactful real world solutions that transforms one's insightful thinking into a valuable long-term asset."
 
@@ -64,6 +73,9 @@ en:
     description: 'Contact us for further information'
     summary:
       content: ''
-    address: '40E Ngo Duc Ke Street, District 1&#10;Ben Nghe Ward, HCMC, Vietnam'
+    address:
+      line_1: '40E Ngo Duc Ke Street, District 1'
+      line_2: 'Ben Nghe Ward, HCMC, Vietnam'
     phone: '+84 912 878985'
     email: 'admin@goldenowl.asia'
+    website: 'www.goldenowl.asia'
