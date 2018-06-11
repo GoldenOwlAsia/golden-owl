@@ -21,7 +21,7 @@
 //= require jquery.fullPage
 
 $(document).ready(function() {
-  var anchors = ['home', 'what-we-do', 'what-we-know', 'who-we-are', 'contact', 'contact'];
+  var anchors = ['home', 'what-we-do', 'what-we-know', 'about-us', 'contact', 'contact'];
   var sideBar = $('.sidebar ul li a.nav-icon');
 
   $('#home-container').fullpage({
