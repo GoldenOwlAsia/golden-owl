@@ -30,4 +30,4 @@ default: &default
 
 development:
   <<: *default
-  database: all4hr_development
+  database: goldenowl_development

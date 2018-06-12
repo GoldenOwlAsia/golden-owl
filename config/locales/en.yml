@@ -67,6 +67,10 @@ en:
       line_1: "We are a HCMC-Singapore joint venture group focusing on helping customers turn their ideas into websites. Our client's satisfaction will always be our priority."
       line_2: "Our jobs is to provide professional and impactful real world solutions that transforms one's insightful thinking into a valuable long-term asset."
 
+  testimonial:
+    title: 'Testimonial'
+    description: 'We hope to make our clients happy by providing good quality services.'
+
   contact_us:
     title: 'Contact us'
     description: 'Contact us for further information'

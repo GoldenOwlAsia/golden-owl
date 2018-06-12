@@ -1,0 +1,38 @@
+.testimonial-container {
+  text-align: center;
+  background-color: $middle-gray;
+
+  .customer {
+    min-width: 150px;
+    margin-top: 30px;
+    img {
+      float: left;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .customer-feedback {
+    margin-left: 80px;
+    padding-left: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    .information {
+      text-align: left;
+
+      .name {
+        font-weight: 700;
+      }
+    }
+
+    .feedback {
+      padding: 15px;
+      background-color: $light-brown;
+      color: #ffffff;
+      text-align: justify;
+      border-radius: 5px;
+    }
+  }
+}
