@@ -1,0 +1,82 @@
+.section.about-us-container id='aboutus'
+  .container-fluid
+    .row
+      .col-sm-4.col-sm-offset-4
+        section
+          .header
+            = t 'about_us.title'
+          .content
+            = t 'about_us.description'
+    .introduction
+      .row.bosses
+        .col-md-10.col-md-offset-1
+          .col-md-4
+            .avatar.ceo
+              .information
+                .name JUSTIN NGUYEN
+                .title CEO & Founder
+          .col-md-4
+            .avatar.coo
+              .information
+                .name MARK TRAN
+                .title COO
+          .col-md-4
+            .avatar.leader
+              .information
+                .name PHIL ON
+                .title Tech Lead
+      .row.qualities
+        .col-md-8.col-md-offset-2
+          .col.col-sm-4
+            .image
+              img src='assets/wwr-creative.png'
+            section
+              .header
+                = t 'about_us.qualities.creative.title'
+              .content
+                = t 'about_us.qualities.creative.content'
+          .col.col-sm-4
+            .image
+              img src='assets/wwr-proactive.png'
+            section
+              .header
+                = t 'about_us.qualities.proactive.title'
+              .content
+                = t 'about_us.qualities.proactive.content'
+          .col.col-sm-4
+            .image
+              img src='assets/wwr-responsible.png'
+            section
+              .header
+                = t 'about_us.qualities.responsible.title'
+              .content
+                = t 'about_us.qualities.responsible.content'
+      .row.about
+        .col-sm-10.col-sm-offset-1
+          .col.col-sm-6
+            section
+              .header
+                = t 'about_us.experience.title'
+              .content
+                ul
+                  li
+                    = t 'about_us.experience.line_1'
+                  br
+                  li
+                    = t 'about_us.experience.line_2'
+                  br
+                  li
+                    = t 'about_us.experience.line_3'
+                  br
+          .col.col-sm-6
+            section
+              .header
+                = t 'about_us.mission.title'
+              .content
+                ul
+                  li
+                    = t 'about_us.mission.line_1'
+                  br
+                  li
+                    = t 'about_us.mission.line_2'
+                  br

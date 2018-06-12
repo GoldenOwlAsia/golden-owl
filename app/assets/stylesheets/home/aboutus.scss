@@ -1,0 +1,64 @@
+.about-us-container {
+  // min-height: 100vh;
+  text-align: center;
+  .introduction {
+    .row {
+      section {
+        .header {
+          line-height: 16px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .row.about {
+      text-align: justify;
+      ul {
+        padding-left: 15px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .avatar {
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+.avatar {
+  .information {
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    left: 30px;
+    top: 170px;
+    .name {
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .title {
+      font-weight: 600;
+    }
+  }
+}
+.ceo {
+  background: url('/assets/CEO.jpg') no-repeat center bottom;
+  background-size: contain;
+}
+.coo {
+  background: url('/assets/COO.png') no-repeat center bottom;
+  background-size: contain;
+}
+.leader {
+  background: url('/assets/LEADER.jpg') no-repeat center bottom;
+  background-size: contain;
+}
+
+.about-us-container > section {
+    .content {
+      font-size: 14px;
+    }
+}

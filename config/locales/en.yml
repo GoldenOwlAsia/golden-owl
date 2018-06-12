@@ -44,8 +44,8 @@ en:
     title: 'What we know'
     description: 'We only do what we know best. Our technologies cover every component needed to build and support a complete end to end software solution.'
 
-  who_we_are:
-    title: 'Who we are'
+  about_us:
+    title: 'About us'
     description: 'We commit to provide impactful solution for your technical issues.'
     qualities:
       creative:
@@ -66,6 +66,10 @@ en:
       title: 'Mission'
       line_1: "We are a HCMC-Singapore joint venture group focusing on helping customers turn their ideas into websites. Our client's satisfaction will always be our priority."
       line_2: "Our jobs is to provide professional and impactful real world solutions that transforms one's insightful thinking into a valuable long-term asset."
+
+  testimonial:
+    title: 'Testimonial'
+    description: 'We hope to make our clients happy by providing good quality services.'
 
   contact_us:
     title: 'Contact us'
