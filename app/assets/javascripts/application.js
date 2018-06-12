@@ -32,6 +32,6 @@ $(document).ready(function() {
     scrollOverflow: true,
     paddingTop: '46px',
     verticalCentered: false,
-    scrollBar: true
+    slideSelector: ''
   });
 });

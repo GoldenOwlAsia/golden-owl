@@ -9,63 +9,73 @@
             = t 'testimonial.description'
     .row
       .col-md-10.col-md-offset-1
-        .col-sm-6
-          .customer
-            .customer-avatar
-              img.img-circle src='/assets/testimonial-00.jpg'
-            .customer-feedback
-              .information
-                .name Raja
-                .title IdeaBurns
-              .feedback
-                | "GoldenOwl have proven to be an extremely cost effective and professional resource. We have been particularly impressed with the speed of implementation, dedication & quality of the product development. So that we can see the company as our long-term technology partner."
-        .col-sm-6
-          .customer
-            .customer-avatar
-              img.img-circle src='/assets/testimonial-01.png'
-            .customer-feedback
-              .information
-                .name Dr. Didin Agustian Permadi
-                .title Asian Institute of Technology
-              .feedback
-                | "We are glad to use of one of the masterpiece products from Goldenowl inc. The software is really useful to overcome a problems of treating big data produced from air quality modeling simulation. I am very surprise of the high quality of the software which is unique and effective to fulfill the need to process a big environmental data. It is a miracle in IT development and we, scientist can benefit a lot from their products"
-        .col-sm-6
-          .customer
-            .customer-avatar
-              img.img-circle src='/assets/testimonial-10.png'
-            .customer-feedback
-              .information
-                .name Tinkerbox
-                .title Tinkerbox
-              .feedback
-                | "Justin have been a delight to work with. His team was fast to respond and deliver."
-        .col-sm-6
-          .customer
-            .customer-avatar
-              img.img-circle src='/assets/testimonial-11.jpg'
-            .customer-feedback
-              .information
-                .name Will Beebe
-                .title Project PC crawler
-              .feedback
-                | "Golden Owl has been a stable, consistent, and strong contributor to our company and I'm looking forward to working with them much more in the future."
-        .col-sm-6
-          .customer
-            .customer-avatar
-              img.img-circle src='/assets/testimonial-20.png'
-            .customer-feedback
-              .information
-                .name Luu Minh Cong
-                .title Instaplus
-              .feedback
-                | "GoldenOwl is the right partner with good teams, we worked with some others outsourced companies, but only with Goldenowl we feel confidence with our project. Also we choose Goldenowl for it price/rate, it really beats others."
-        .col-sm-6
-          .customer
-            .customer-avatar
-              img.img-circle src='/assets/testimonial-21.png'
-            .customer-feedback
-              .information
-                .name Nhiem Nguyen
-                .title Project Iadoa, US
-              .feedback
-                | "GoldenOwl is very knowledge in the Ruby on Rails and especially in Spree. My requirements weren't clear at first but they asked questions and then delivery quality application. Easy to work with and highly recommend."
+        #myCarousel.carousel.slide data-ride="carousel"
+          ol.carousel-indicators
+            li.active data-slide-to="0" data-target="#myCarousel"
+            li data-slide-to="1" data-target="#myCarousel"
+            li data-slide-to="2" data-target="#myCarousel"
+
+          .carousel-inner
+            .item.active
+              .col-sm-6
+                .customer
+                  .customer-avatar
+                    img.img-circle src='/assets/testimonial-00.jpg'
+                  .customer-feedback
+                    .information
+                      .name Raja
+                      .title IdeaBurns
+                    .feedback
+                      | "GoldenOwl have proven to be an extremely cost effective and professional resource. We have been particularly impressed with the speed of implementation, dedication & quality of the product development. So that we can see the company as our long-term technology partner."
+              .col-sm-6
+                .customer
+                  .customer-avatar
+                    img.img-circle src='/assets/testimonial-01.png'
+                  .customer-feedback
+                    .information
+                      .name Dr. Didin Agustian Permadi
+                      .title Asian Institute of Technology
+                    .feedback
+                      | "We are glad to use of one of the masterpiece products from Goldenowl inc. The software is really useful to overcome a problems of treating big data produced from air quality modeling simulation. I am very surprise of the high quality of the software which is unique and effective to fulfill the need to process a big environmental data. It is a miracle in IT development and we, scientist can benefit a lot from their products"
+            .item
+              .col-sm-6
+                .customer
+                  .customer-avatar
+                    img.img-circle src='/assets/testimonial-10.png'
+                  .customer-feedback
+                    .information
+                      .name Tinkerbox
+                      .title Tinkerbox
+                    .feedback
+                      | "Justin have been a delight to work with. His team was fast to respond and deliver."
+              .col-sm-6
+                .customer
+                  .customer-avatar
+                    img.img-circle src='/assets/testimonial-11.jpg'
+                  .customer-feedback
+                    .information
+                      .name Will Beebe
+                      .title Project PC crawler
+                    .feedback
+                      | "Golden Owl has been a stable, consistent, and strong contributor to our company and I'm looking forward to working with them much more in the future."
+            .item
+              .col-sm-6
+                .customer
+                  .customer-avatar
+                    img.img-circle src='/assets/testimonial-20.png'
+                  .customer-feedback
+                    .information
+                      .name Luu Minh Cong
+                      .title Instaplus
+                    .feedback
+                      | "GoldenOwl is the right partner with good teams, we worked with some others outsourced companies, but only with Goldenowl we feel confidence with our project. Also we choose Goldenowl for it price/rate, it really beats others."
+              .col-sm-6
+                .customer
+                  .customer-avatar
+                    img.img-circle src='/assets/testimonial-21.png'
+                  .customer-feedback
+                    .information
+                      .name Nhiem Nguyen
+                      .title Project Iadoa, US
+                    .feedback
+                      | "GoldenOwl is very knowledge in the Ruby on Rails and especially in Spree. My requirements weren't clear at first but they asked questions and then delivery quality application. Easy to work with and highly recommend."
