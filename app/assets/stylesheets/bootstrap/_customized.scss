@@ -24,6 +24,11 @@
   margin-bottom: 22px;
 }
 
+.information {
+  color: $light-brown;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .btn {
   background-color: Transparent;
   border: 2px $dark-brown solid;
@@ -44,9 +49,11 @@ section {
   padding: 0 15px;
 
   .header {
+    line-height: 1;
     color: $light-brown;
     font-size: 34px;
     font-weight: bold;
+    margin-top: 10px;
     margin-bottom: 18px;
   }
 
