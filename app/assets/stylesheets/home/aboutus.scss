@@ -18,7 +18,45 @@
         margin-bottom: 0px;
       }
     }
+
+    .avatar {
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 250px;
+      height: 250px;
+    }
   }
+}
+
+.avatar {
+  .member {
+    color: $light-brown;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    text-align: left;
+    position: relative;
+    left: 30px;
+    top: 170px;
+    .name {
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .title {
+      font-weight: 600;
+    }
+  }
+}
+.ceo {
+  background: url('/assets/CEO.jpg') no-repeat center bottom;
+  background-size: contain;
+}
+.coo {
+  background: url('/assets/COO.png') no-repeat center bottom;
+  background-size: contain;
+}
+.leader {
+  background: url('/assets/LEADER.jpg') no-repeat center bottom;
+  background-size: contain;
 }
 
 .about-us-container > section {

@@ -29,5 +29,6 @@ $(document).ready(function() {
     menu: '.menu',
     scrollOverflow: true,
     paddingTop: '46px',
+    verticalCentered: false
   });
 });
