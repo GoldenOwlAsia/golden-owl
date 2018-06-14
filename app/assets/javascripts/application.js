@@ -21,6 +21,15 @@
 //= require jquery.fullPage
 
 $(document).ready(function() {
+  $(document).keydown(function(event) {
+    if (event.keyCode == 39) {
+      $('#myCarousel').carousel('next');
+    }
+    if (event.keyCode == 37) {
+      $('#myCarousel').carousel('prev');
+    }
+  });
+
   var anchors = ['home', 'what-we-do', 'what-we-know', 'about-us',
                  'testimonial', 'contact', 'contact'];
 
