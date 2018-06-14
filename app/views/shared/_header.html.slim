@@ -1,0 +1,32 @@
+.shared-header-container.menu
+  nav.navbar.navbar-default
+    .container-fluid
+      /! Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed aria-expanded="false" data-target="#navbar-collapse" data-toggle="collapse" type="button"
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a href='#home'
+          img id='logo' src='/assets/header-logo.png' alt='Logo'
+      /! Collect the nav links, forms, and other content for toggling
+      #navbar-collapse.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right id='header'
+          li.nav-item data-menuanchor='home'
+            a.nav-link href='#home'  Introduction
+          li.nav-item data-menuanchor='what-we-do'
+            a.nav-link href='#what-we-do'  What we do
+          li.nav-item data-menuanchor='what-we-know'
+            a.nav-link href='#what-we-know'  What we know
+          li.nav-item data-menuanchor='about-us'
+            a.nav-link href='#about-us'  About us
+          li.nav-item data-menuanchor='testimonial'
+            a.nav-link href='#testimonial'  Testimonial
+          li.nav-item
+            a.nav-link target="_blank" href='https://drive.google.com/file/d/11NN6InynOIWIr-L8o5-b53VNQtdL2TxV/view'
+              | Portfolio
+          li.nav-item
+            a.nav-link target="_blank" href='https://all4hr.com/public/golden-owl-consulting' Career
+          li.nav-item data-menuanchor='contact'
+            a.nav-link href='#contact'  Contact

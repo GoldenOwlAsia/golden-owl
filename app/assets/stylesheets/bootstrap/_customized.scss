@@ -1,0 +1,66 @@
+.text-dark-brown {
+  color: $dark-brown !important;
+}
+
+.col {
+  margin-top: 50px;
+}
+
+.image {
+  margin-bottom: 30px;
+
+  img {
+    height: 44px;
+    max-width: 100%;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-group {
+  border-radius: 0;
+  margin-bottom: 22px;
+}
+
+.information {
+  color: $light-brown;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  background-color: Transparent;
+  border: 2px $dark-brown solid;
+  border-radius: 0;
+
+  color: $dark-brown;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+
+  padding: 12px 24px;
+}
+
+section {
+  font-family: 'Dosis', sans-serif;
+  padding: 0 15px;
+
+  .header {
+    line-height: 1;
+    color: $light-brown;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .content {
+    color: $light-gray;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
+  }
+}

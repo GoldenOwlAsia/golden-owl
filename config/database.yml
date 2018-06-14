@@ -23,11 +23,11 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: myapp
-  password: password1
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
   pool: 5
 
 development:
   <<: *default
-  database: all4hr_development
+  database: goldenowl_development

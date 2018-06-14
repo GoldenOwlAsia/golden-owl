@@ -15,6 +15,42 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require_tree
-//= require ckeditor/init
 //= require bootstrap.min
+//= require scrolloverflow
+//= require jquery.fullPage
 
+$(document).ready(function() {
+
+  var carousel = document.getElementById('myCarousel');
+
+  $(document).keydown(function(event) {
+    if (event.keyCode == 39) {
+      $(carousel).carousel('next');
+    }
+    if (event.keyCode == 37) {
+      $(carousel).carousel('prev');
+    }
+  });
+
+  Hammer(carousel).on('swipeleft', function() {
+    $(carousel).carousel('next');
+  });
+
+  Hammer(carousel).on('swiperight', function() {
+    $(carousel).carousel('prev');
+  });
+
+  var anchors = ['home', 'what-we-do', 'what-we-know', 'about-us',
+                 'testimonial', 'contact', 'contact'];
+
+  var sideBar = $('.sidebar ul li a.nav-icon');
+
+  $('#home-container').fullpage({
+    anchors: anchors,
+    menu: '.menu',
+    scrollOverflow: true,
+    paddingTop: '46px',
+    verticalCentered: false,
+    slideSelector: ''
+  });
+});
