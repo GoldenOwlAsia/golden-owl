@@ -82,9 +82,9 @@ en:
       address_line_2: 'Ben Nghe Ward, HCMC, Vietnam'
 
     hanoi:
-      title: 'Ha Noi'
-      address_line_1: 'Golden West, số 2, Lê Văn Thiêm'
-      address_line_2: 'Nhân Chính, Thanh Xuân, Hà Nội.'
+      title: 'Hanoi'
+      address_line_1: 'Golden West, No 2, Le Van Thiem Street'
+      address_line_2: 'Nhan Chinh Ward, Thanh Xuan District, Hanoi'
     phone: '+84 912 878985'
     email: 'admin@goldenowl.asia'
     website: 'www.goldenowl.asia'
