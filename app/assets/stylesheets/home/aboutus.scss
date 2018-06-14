@@ -13,6 +13,8 @@
 
     .row.about {
       text-align: justify;
+      margin-bottom: 50px;
+
       ul {
         padding-left: 15px;
         margin-bottom: 0px;
@@ -20,45 +22,46 @@
     }
 
     .avatar {
+      position: relative;
       margin: 0 auto;
       margin-top: 50px;
-      width: 250px;
-      height: 250px;
+      display:inline-block;
     }
   }
 }
 
 .avatar {
+  img {
+    height: 250px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    opacity: 0.3;
+  }
+
   .information {
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
-    position: relative;
-    left: 30px;
-    top: 170px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+
     .name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 14px;
     }
+
     .title {
       font-weight: 600;
     }
   }
-}
-.ceo {
-  background: url('/assets/CEO.jpg') no-repeat center bottom;
-  background-size: contain;
-}
-.coo {
-  background: url('/assets/COO.png') no-repeat center bottom;
-  background-size: contain;
-}
-.leader {
-  background: url('/assets/LEADER.jpg') no-repeat center bottom;
-  background-size: contain;
 }
 
 .about-us-container > section {
     .content {
       font-size: 14px;
     }
+}
+
+.avatar.coo .information {
+  left: 0;
 }

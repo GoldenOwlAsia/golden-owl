@@ -26,15 +26,18 @@
 }
 
 .sidebar li.nav-item {
-  width: 154px;
+  width: 44px;
   height: 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 20px;
   font-size: 12px;
+
   &.active {
+    width: 154px;
+
     a {
-    background-color: $lemon-yellow;
+      background-color: $lemon-yellow;
     }
     .nav-text {
       display: inline-block;

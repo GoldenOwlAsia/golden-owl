@@ -76,9 +76,15 @@ en:
     description: 'Contact us for further information'
     summary:
       content: ''
-    address:
-      line_1: '40E Ngo Duc Ke Street, District 1'
-      line_2: 'Ben Nghe Ward, HCMC, Vietnam'
+    hcmc:
+      title: 'Ho Chi Minh'
+      address_line_1: '40E Ngo Duc Ke Street, District 1'
+      address_line_2: 'Ben Nghe Ward, HCMC, Vietnam'
+
+    hanoi:
+      title: 'Ha Noi'
+      address_line_1: 'Golden West, số 2, Lê Văn Thiêm'
+      address_line_2: 'Nhân Chính, Thanh Xuân, Hà Nội.'
     phone: '+84 912 878985'
     email: 'admin@goldenowl.asia'
     website: 'www.goldenowl.asia'

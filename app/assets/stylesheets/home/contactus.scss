@@ -28,6 +28,17 @@
   }
 }
 
+
+ul.social {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+
+  a {
+    color: $dark-brown;
+  }
+}
+
 #contact_message {
     height: 112px;
 }
