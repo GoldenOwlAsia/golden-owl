@@ -26,7 +26,6 @@
       margin: 0 auto;
       margin-top: 50px;
       display:inline-block;
-
     }
   }
 }
@@ -35,6 +34,7 @@
   img {
     height: 250px;
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     opacity: 0.3;
   }
 

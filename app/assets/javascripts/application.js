@@ -21,13 +21,24 @@
 //= require jquery.fullPage
 
 $(document).ready(function() {
+
+  var carousel = document.getElementById('myCarousel');
+
   $(document).keydown(function(event) {
     if (event.keyCode == 39) {
-      $('#myCarousel').carousel('next');
+      $(carousel).carousel('next');
     }
     if (event.keyCode == 37) {
-      $('#myCarousel').carousel('prev');
+      $(carousel).carousel('prev');
     }
+  });
+
+  Hammer(carousel).on('swipeleft', function() {
+    $(carousel).carousel('next');
+  });
+
+  Hammer(carousel).on('swiperight', function() {
+    $(carousel).carousel('prev');
   });
 
   var anchors = ['home', 'what-we-do', 'what-we-know', 'about-us',
