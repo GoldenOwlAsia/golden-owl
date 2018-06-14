@@ -26,8 +26,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim', '~> 3.0.6'
 # bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
-# fa-icon
-gem 'font-awesome-sass', '~> 4.4.0'
 
 # Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem 'less-rails'
@@ -46,7 +44,6 @@ gem 'dotenv-rails', groups: %i[development test]
 # gem 'capistrano-rails', group: :development
 
 #mail
-gem 'mail_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -72,14 +69,5 @@ gem 'rails_12factor', group: :production
 
 # gem 'nokogiri'
 gem 'aws-sdk', '>= 2.0.0'
-gem 'carrierwave'
-gem 'ckeditor'
-gem 'devise'
-gem 'devise-bootstrap-views'
 gem 'font-awesome-rails'
-gem 'impressionist'
-gem 'mini_magick'
-gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
-gem 'sendgrid-ruby'
-gem 'simple_form'
 gem 'stringex'
