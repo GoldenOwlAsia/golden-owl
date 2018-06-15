@@ -20,37 +20,40 @@
         margin-bottom: 0px;
       }
     }
-
-    .avatar {
-      position: relative;
-      margin: 0 auto;
-      margin-top: 50px;
-      display:inline-block;
-    }
   }
 }
 
 .avatar {
+  height: 250px;
+  width: 230px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+
   img {
-    height: 250px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    opacity: 0.3;
+    height: 100%;
   }
 
   .information {
-    font-size: 12px;
-    text-align: left;
     position: absolute;
-    top: 70%;
-    left: 10%;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0 30px;
+    background-clip: content-box;
+    background-color: $light-brown;
 
     .name {
+      padding: 0 10px;
+      margin-top: 5px;
       font-weight: 700;
       font-size: 14px;
     }
 
     .title {
+      padding: 0 10px;
+      margin-bottom: 5px;
       font-weight: 600;
     }
   }
@@ -62,6 +65,10 @@
     }
 }
 
-.avatar.coo .information {
-  left: 0;
+.coo .information {
+  padding: 0 40px;
+}
+
+.leader .information {
+  padding: 0 50px;
 }
