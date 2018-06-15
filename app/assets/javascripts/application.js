@@ -32,6 +32,7 @@ $(document).ready(function() {
     }
   });
 
+  delete Hammer.defaults.cssProps.userSelect;
   Hammer(carousel).on('swipeleft', function() {
     $(carousel).carousel('next');
   });
@@ -51,6 +52,7 @@ $(document).ready(function() {
     scrollOverflow: true,
     paddingTop: '46px',
     verticalCentered: false,
-    slideSelector: ''
+    slideSelector: '',
+    scrollOverflowOptions: { disablePointer: true, }
   });
 });
