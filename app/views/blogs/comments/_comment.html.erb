@@ -1,6 +1,0 @@
-<%= div_for(comment) do %>
-  <p>
-    <%= h(comment.content) %></br>
-     &nbsp;<small>Posted : <%= time_ago_in_words(comment.created_at) %>, By : <%= comment.user.email%></small></br>
-  </p>
-<% end %>

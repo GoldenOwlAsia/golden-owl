@@ -7,26 +7,15 @@
       ul
         - contact.errors.full_messages.each do |message|
           li= message
-  #contactForm.form name="sentMessage" 
-    .form-group.col-xs-12
-      = f.label :Name
-      br/
-      = f.text_field :name, class: "form-control", required: "true", type: "text"
-    .form-group.col-xs-12
-      = f.label :Email
-      br/
-      = f.text_field :email, class: "form-control", required: "true", type: "email"
-    .form-group.col-xs-12
-      = f.label :Subject
-      br/
-      = f.text_field :subject, class: "form-control", required: "true", type: "text"
-    .form-group.col-xs-12
-      = f.label :Message
-      br/
-      = f.text_area :message, class: "form-control", required: "true", type: "text"
-    .row
-      .form-group.col-xs-12        
-        = f.submit "EMAIL US", :class => "btn"
+  #contactForm.form name='sentMessage' 
+    .form-group
+      = f.text_field :name, placeholder: 'Name*', class: 'form-control', required: 'true', type: 'text'
+    .form-group
+      = f.text_field :email, placeholder: 'Email*', class: 'form-control', required: 'true', type: 'email'
+    .form-group
+      = f.text_area :message, placeholder: 'Message', class: 'form-control', required: 'true', type: 'text'
+    .form-group.text-left   
+        = f.submit 'SEND US', class: 'btn'
         - flash.each do |key, value|
           javascript: 
             alert("#{value}")

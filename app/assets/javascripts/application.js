@@ -15,6 +15,8 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require_tree
-//= require ckeditor/init
 //= require bootstrap.min
-
+//= require scrolloverflow
+//= require jquery.fullPage
+//= require slide_event
+//= require fullPage
