@@ -1,6 +1,6 @@
 // contains configurations for using fullPage library
 $(document).ready(function() {
-  var anchors = ['home', 'what-we-do', 'what-we-know', /*'about-us',*/
+  var anchors = ['home', 'what-we-do', 'what-we-know', 'about-us',
                  'testimonial', 'contact', 'contact'];
 
   var sideBar = $('.sidebar ul li a.nav-icon');
