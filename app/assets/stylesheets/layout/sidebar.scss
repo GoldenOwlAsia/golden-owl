@@ -8,45 +8,58 @@
     height: $header-height;
     padding: 8px 6px;
     background-color: $dark-brown;
+
     img {
-      height: 100%;
+      width: height;
     }
   }
 
-  .sidebar {
-    background-color: $light-brown;
+  .sidebar-nav {
     min-height: calc(100vh - 46px);
+    background-color: $light-brown;
+    width: $sidebar-width;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    ul.nav {
-      width: $sidebar-width;
-    }
+  ul.navbar-nav {
+    margin: 0;
   }
 }
 
-.sidebar li.nav-item {
-  width: 44px;
-  height: 40px;
+.sidebar-nav .nav-item {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 20px;
   font-size: 12px;
+  border-top: $bright-gray 1px solid;
+
+  &:hover,
+  &.active {
+    background-color: $lemon-yellow;
+    border-top: 1px solid $lemon-yellow;
+
+    & + .nav-item {
+      border-top-color: transparent;
+    }
+
+    .nav-icon {
+      & > img {
+        opacity: 0;
+      }
+
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
 
   &.active {
     width: 154px;
 
-    a {
-      background-color: $lemon-yellow;
-    }
     .nav-text {
       display: inline-block;
-    }
-
-    .nav-icon {
-      .overlay {
-        opacity: 1;
-      }
     }
   }
 
@@ -54,6 +67,10 @@
     display: inline-block;
     text-align: center;
     padding: 10px 0;
+
+    &:hover {
+      background-color: inherit;
+    }
   }
 
   .nav-text {
@@ -64,24 +81,17 @@
 
   // The last nav-item has 1 extra border-bottom
   &:last-child {
-    .nav-icon {
-      border-bottom: $bright-gray 1px solid;
+    border-bottom: $bright-gray 1px solid;
+    &:hover,
+    &.active {
+      border-color: $lemon-yellow;
     }
   }
 }
 
 .nav-icon {
-  border-top: $bright-gray 1px solid;
   width: $sidebar-width;
-
-  &:hover,
-  &:focus {
-    background-color: $lemon-yellow !important;
-
-    .overlay {
-      opacity: 1;
-    }
-  }
+  position: relative;
 
   .overlay {
     opacity: 0;

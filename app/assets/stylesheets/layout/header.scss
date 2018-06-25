@@ -39,6 +39,11 @@
       margin: 16px 0;
     }
   }
+
+  ul.navbar-nav {
+    margin: 0 -15px;
+    height: 100vh;
+  }
 }
 
 .navbar-toggle .icon-bar {
@@ -48,11 +53,6 @@
 .navbar-collapse {
   border: 0;
   background-color: rgba(255,255,255,0.92);
-}
-
-ul.navbar-nav {
-  margin: 0 -15px;
-  height: 100vh;
 }
 
 li.nav-item {
