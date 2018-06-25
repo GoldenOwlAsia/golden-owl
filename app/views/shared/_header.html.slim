@@ -1,15 +1,15 @@
 .shared-header-container.menu
-  nav.navbar.navbar-default
+  nav.navbar
     .container-fluid
       /! Brand and toggle get grouped for better mobile display
       .navbar-header
+        a href='#home'
+          img id='logo' src='/assets/header-logo.png' alt='Logo'
         button.navbar-toggle.collapsed aria-expanded="false" data-target="#navbar-collapse" data-toggle="collapse" type="button"
           span.sr-only Toggle navigation
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a href='#home'
-          img id='logo' src='/assets/header-logo.png' alt='Logo'
       /! Collect the nav links, forms, and other content for toggling
       #navbar-collapse.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right id='header'

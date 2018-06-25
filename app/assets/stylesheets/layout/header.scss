@@ -12,15 +12,14 @@
 }
 
 .shared-header-container {
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   z-index: 100000;
-  height: $header-height;
-  padding-left: $sidebar-width;
-  width: 100%;
+  left: $sidebar-width;
+  width: calc(100% - #{$sidebar-width});
 
   .navbar {
-    background: url("header-background.png") no-repeat top center;
     border: 0;
     border-radius: 0;
     min-height: initial;
@@ -36,15 +35,19 @@
     }
 
     #logo {
-      height: 12px;
-      margin: 17px 0;
+      height: 14px;
+      margin: 16px 0;
     }
   }
 }
 
+.navbar-toggle .icon-bar {
+    background-color: $dark-brown;
+}
+
 .navbar-collapse {
   border: 0;
-  background-color: rgba(243,240,229,0.92);
+  background-color: rgba(255,255,255,0.92);
 }
 
 ul.navbar-nav {

@@ -6,7 +6,7 @@
 
   .sidebar-logo {
     height: $header-height;
-    padding: 7px 11px;
+    padding: 8px 6px;
     background-color: $dark-brown;
     img {
       height: 100%;
@@ -65,13 +65,13 @@
   // The last nav-item has 1 extra border-bottom
   &:last-child {
     .nav-icon {
-      border-bottom: $light-gray 1px solid;
+      border-bottom: $bright-gray 1px solid;
     }
   }
 }
 
 .nav-icon {
-  border-top: $light-gray 1px solid;
+  border-top: $bright-gray 1px solid;
   width: $sidebar-width;
 
   &:hover,
