@@ -1,0 +1,98 @@
+doctype html
+html[amp lang="en"]
+  head
+    meta charset="utf-8" /
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    script async="" custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"
+    title Golden Owl - Ruby on Rails, NodeJS, ReactJS and React Native
+    / link rel="canonical" href="#{root_path}"
+    link rel="canonical" href="http://www.goldenowl.asia/home/"
+    link rel="amphtml" href="http://www.goldenowl.asia/home/amp"
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"
+    meta name="description" content="Golden Owl - We do Ruby on Rails, NodeJS, ReactJS and React Native. We follow Agile & TDD practice and cool softwares like Github, Basecamp, Slack in our daily work to provide best communication and transparency to clients. Our services include web development, mobile development, head hunting and more."
+    meta content='Golden Owl - Ruby on Rails, NodeJS, ReactJS and React Native' property='og:title'
+    link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800|Montserrat:500,600,700)" rel="stylesheet"
+    style[amp-custom]
+      /* shared */
+      | .btn { background-color: Transparent; border: 2px #6f624f solid; color: #6f624f; display: inline-block; font-size: 12px; font-weight: 500; padding: 10px 20px; }
+      | .section { min-height: calc(100vh - 92px); padding: 46px 0; }
+      | section { font-family: 'Dosis', sans-serif; color: #6f624f; text-align: center; padding: 0 15px; }
+      | section .header { line-height: 1; color: #8c7e6b; font-size: 34px; font-weight: bold; margin-top: 10px; margin-bottom: 18px; }
+      | section .content { color: #c1b8ab; font-size: 14px; font-weight: 500; margin: 0 auto; }
+      | a { text-decoration: none; }
+      | .image { height: 44px; margin-bottom: 30px; }
+      | .image amp-img img { min-width: inherit; width: inherit; min-height: 44px; margin: 0 auto; }
+      | .list-inline { padding-left: 0; list-style: none; margin-left: -5px; }
+      | .list-inline > li { display: inline-block; padding-left: 5px; padding-right: 5px; }
+      | .field { margin-top: 50px; }
+      | .field section .header { font-size: 16px; }
+
+      /* responsive */
+      | .fields-container { display: flex; flex-wrap: wrap; }
+      | .container { margin: 0 15px; }
+      | .offset-1over12 { margin: 0 8.33333%; }
+      | .offset-2over12 { margin: 0 16.6666% }
+      | .offset-3over12 { margin: 0 25%; }
+      | .offset-4over12 { margin: 0 33.3333%; }
+      | @media (max-width: 568px) { .offset-1over12, .offset-2over12,
+                                    .offset-3over12, .offset-4over12 { margin: 0 15px; }}
+
+      /* intro section */
+      | .intro-container  { display: flex; flex-direction: column; justify-content: center; text-align: center; background: url("/assets/intro-background-70.jpg") no-repeat center; background-size: cover }
+      | .intro-container section .header { font-size: 36px; font-weight: bold}
+      | .intro-container section .content { width: 70%; }
+      | .intro-container .intro-button { font-family: 'Montserrat', sans-serif; margin-top: 20px; }
+
+      /* what we do section */
+      | .whatwedo-container .field { width: 33.3333%; }
+      | @media (max-width: 568px) { .whatwedo-container .field { width: 100%; }}
+
+      /* what we know section */
+      | .whatweknow-container { background-color: #f3efe6; }
+      | .whatweknow-container .field { width: 25%; }
+      | @media (max-width: 768px) { .whatweknow-container .field { width: 50%; }}
+      | @media (max-width: 568px) { .whatweknow-container .field { width: 100%; }}
+
+      /* about us section*/
+      | .aboutus-container .field { width: 33.3333%; }
+      | .aboutus-container .about .field { width: 50%; }
+      | .aboutus-container .about section { text-align: justify; padding: 0 30px; }
+      | .aboutus-container .about ul { padding-left: 15px; margin-bottom: 0; }
+      | @media (max-width: 768px) {
+      |   .aboutus-container .offset-2over12 { margin: 0 15px; }
+      |   .aboutus-container .offset-1over12 { margin: 0 15px; }
+      | }
+      | @media (max-width: 568px) {
+      |   .aboutus-container .field { width: 100%; }
+      |   .aboutus-container .about .field { width: 100%; }
+      | }
+
+      /* contact us section*/
+      | .contactus-container { background-color: #f3efe6; text-align: center; }
+      | .contactus-container .field { width: 33.3333%; }
+      | .contactus-container a { color: #6f624f; }
+      | .contactus-container .contact { margin-top: 20px; color: #6f624f; line-height: 20px; }
+      | .contactus-container .field section { text-align: left; }
+      |
+      | @media (max-width: 768px) {
+      |   .contactus-container .offset-1over12 { margin: 0 15px; } }
+      | @media (max-width: 568px) {
+      |   .contactus-container .field { width: 100%; } }
+      | .contactus-container a.btn { margin-top: 30px; font-family: 'Montserrat', sans-serif; }
+    script type="application/ld+json"
+      | {
+      | "@context": "http://schema.org",
+      | "@type": "NewsArticle",
+      | "headline": "Open-source framework for publishing content",
+      | "datePublished": "2015-10-07T12:02:41Z",
+      | "image": [
+      | "logo.jpg"
+      | ]
+      | }
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+  body
+    = yield

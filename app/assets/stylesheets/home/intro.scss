@@ -1,12 +1,12 @@
 .intro-container {
-  // min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: url("intro-background.png") no-repeat center;
+  background: url("/assets/intro-background.png") no-repeat center;
   background-size: cover;
-  
+
   section {
     .header {
       font-size: 36px;
