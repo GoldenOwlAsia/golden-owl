@@ -14,29 +14,36 @@ html[amp lang="en"]
     meta content='Golden Owl - Ruby on Rails, NodeJS, ReactJS and React Native' property='og:title'
     link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800|Montserrat:500,600,700)" rel="stylesheet"
     style[amp-custom]
-      /*shared*/
+      /* shared */
       | .btn { background-color: Transparent; border: 2px #6f624f solid; color: #6f624f; font-size: 12px; font-weight: 500; padding: 10px 20px; }
       | .section { min-height: calc(100vh - 92px); padding: 46px 0; }
       | section { font-family: 'Dosis', sans-serif; color: #6f624f; text-align: center; }
       | section .header { line-height: 1; color: #8c7e6b; font-size: 34px; font-weight: bold; margin-top: 10px; margin-bottom: 18px; }
       | section .content { color: #c1b8ab; font-size: 14px; font-weight: 500; margin: 0 auto;}
       | a { text-decoration: none; }
-      | .image { width: 84px; height: 84px; margin: 0 auto; }
-      |.image amp-img img { min-width: inherit; width: inherit; min-height: 44px; }
-      / *intro section*/
+      | .image { height: 44px; margin-bottom: 30px; }
+      | .image amp-img img { min-width: inherit; width: inherit; min-height: 44px; margin: 0 auto;}
+      /* */
+      | .fields-container { display: flex; flex-wrap: wrap; }
+      | .offset-1over12 { margin: 0 8.33333%; }
+      | .offset-3over12 { margin: 0 25%; }
+      | .offset-4over12 { margin: 0 33.3333%; }
+      | @media (max-width: 568px) { .offset-1over12, .offset-3over12, .offset-4over12 { margin: 0 15px; }}
+      | .field { margin-top: 50px; }
+      /* intro section */
       | .intro-container  { display: flex; flex-direction: column; justify-content: center; text-align: center; background: url("/assets/intro-background-70.jpg") no-repeat center; background-size: cover }
       | .intro-container section .header { font-size: 36px; font-weight: bold}
       | .intro-container section .content { width: 70%; }
       | .intro-container .intro-button { font-family: 'Montserrat', sans-serif; margin-top: 20px; }
-      / *what we do section*/
-      | .fields-container { display: flex; flex-wrap: wrap; }
-      | .offset-1th12 { margin: 0 8.33333% }
-      | .field { margin-top: 30px; width: 33.3333%; }
-      | @media (max-width: 600px) { .field { width: 100%; }}
-      |
+      /* what we do section */
       | .whatwedo-container .field section .header { font-size: 16px; }
-      |
-      |
+      | .whatwedo-container .field { width: 33.3333%; }
+      | @media (max-width: 568px) { .whatwedo-container .field { width: 100%; }}
+      /* what we know section */
+      | .whatweknow-container { background-color: #f3efe6; }
+      | .whatweknow-container .field { width: 25%; }
+      | @media (max-width: 768px) { .whatweknow-container .field { width: 50%; }}
+      | @media (max-width: 568px) { .whatweknow-container .field { width: 100%; }}
     script type="application/ld+json"
       | {
       | "@context": "http://schema.org",
