@@ -14,21 +14,27 @@ html[amp lang="en"]
     meta content='Golden Owl - Ruby on Rails, NodeJS, ReactJS and React Native' property='og:title'
     link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800|Montserrat:500,600,700)" rel="stylesheet"
     style[amp-custom]
-      |.btn { background-color: Transparent; border: 2px #6f624f solid; color: #6f624f; font-size: 12px; font-weight: 500; padding: 10px 20px; }
+      /*shared*/
+      | .btn { background-color: Transparent; border: 2px #6f624f solid; color: #6f624f; font-size: 12px; font-weight: 500; padding: 10px 20px; }
+      | .section { min-height: calc(100vh - 92px); padding: 46px 0; }
+      | section { font-family: 'Dosis', sans-serif; color: #6f624f; text-align: center; }
+      | section .header { line-height: 1; color: #8c7e6b; font-size: 34px; font-weight: bold; margin-top: 10px; margin-bottom: 18px; }
+      | section .content { color: #c1b8ab; font-size: 14px; font-weight: 500; margin: 0 auto;}
+      | a { text-decoration: none; }
+      | .image { width: 84px; height: 84px; margin: 0 auto; }
+      |.image amp-img img { min-width: inherit; width: inherit; min-height: 44px; }
+      / *intro section*/
+      | .intro-container  { display: flex; flex-direction: column; justify-content: center; text-align: center; background: url("/assets/intro-background-70.jpg") no-repeat center; background-size: cover }
+      | .intro-container section .header { font-size: 36px; font-weight: bold}
+      | .intro-container section .content { width: 70%; }
+      | .intro-container .intro-button { font-family: 'Montserrat', sans-serif; margin-top: 20px; }
+      / *what we do section*/
+      | .fields-container { display: flex; flex-wrap: wrap; }
+      | .offset-1th12 { margin: 0 8.33333% }
+      | .field { margin-top: 30px; width: 33.3333%; }
+      | @media (max-width: 600px) { .field { width: 100%; }}
       |
-      |section { font-family: 'Dosis', sans-serif; color: #6f624f;}
-      |a { text-decoration: none; }
-      |.image { width: 100%; height: 44px; }
-      |.intro-container  { min-height: 100vh;display: flex;flex-direction: column;justify-content: center;text-align: center;background: url("/assets/intro-background-70.jpg") no-repeat center;background-size: cover }
-      |
-      |.intro-container section .header { font-size: 36px; font-weight: bold}
-      |.intro-container section .content { width: 70%; }
-      |.intro-container .intro-button { font-family: 'Montserrat', sans-serif; margin-top: 20px; }
-      |
-      |
-      |
-      |
-      |
+      | .whatwedo-container .field section .header { font-size: 16px; }
       |
       |
     script type="application/ld+json"
