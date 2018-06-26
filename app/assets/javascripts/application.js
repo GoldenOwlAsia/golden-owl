@@ -17,3 +17,4 @@
 //= require_tree
 //= require bootstrap.min
 //= require slide_event
+//= fancy_scrolling
