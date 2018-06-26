@@ -71,7 +71,12 @@ li.nav-item {
       border-top: #ffd44d 3px solid;
       padding-top:    10px;
     }
+
+    &:focus {
+      background-color: transparent;
+    }
   }
+
   &.active {
     font-weight: 600;
 

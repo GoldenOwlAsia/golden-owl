@@ -1,3 +1,8 @@
 #home-container {
   padding-left: $sidebar-width;
 }
+
+.section {
+  min-height: calc(100vh);
+  padding: $header-height 0;
+}
