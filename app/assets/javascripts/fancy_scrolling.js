@@ -2,7 +2,7 @@
  * source: https://css-tricks.com/snippets/jquery/smooth-scrolling/
  */
 
-function fancy_scrolling(speed = 600) {
+function fancy_scrolling(speed) {
 
   $("a[href*='#']:not([href='#'])").click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -21,5 +21,5 @@ function fancy_scrolling(speed = 600) {
 }
 
 $(document).ready(function() {
-  fancy_scrolling();
+  fancy_scrolling(600);
 });
