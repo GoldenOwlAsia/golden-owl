@@ -16,7 +16,5 @@
 //= require bootstrap
 //= require_tree
 //= require bootstrap.min
-//= require scrolloverflow
-//= require jquery.fullPage
 //= require slide_event
-//= require fullPage
+//= fancy_scrolling
