@@ -27,19 +27,19 @@ en:
     description: 'We are experts in IT field, we believe to bring you best solutions for your ideas.'
     field_1:
       title: 'Web Development'
-      content: ''
+      content: 'We do web development using Ruby on Rails,PHP and Javascript technology. Our developers are graduated from top universities in Vietnam which proves the high quality of work they will bring to you. They can build and design your website and solve different complexity very well.'
     field_2:
       title: 'Mobile Development'
-      content: ''
+      content: 'We develop mobile app using React Native/IOS/Android. Cross platform is now a quick and time-saving way to build an app which runs smoothly and scalable. It is choosen by most of our clients.'
     field_3:
       title: 'UX UI Design'
-      content: ''
+      content: 'We provide UX/UI designers who work as inhouse designer/full time employee, contribute to the growth of your products. They will gather, evaluate user requirements, develop UI mockups and prototypes in collaboration with product managers and engineers.'
     field_4:
       title: 'Project Management'
-      content: ''
+      content: 'Our Project Manager willl work along your request, planning resources, assembling and Leading Project Team. Time management, control quality and satisfaction.'
     field_5:
       title: 'Tech Staffing'
-      content: ''
+      content: 'We provide headhunting service as well. Our company will work on your requirement and job description to find suitable candidates to send you based on our source.'
   what_we_know:
     title: 'What we know'
     description: 'We only do what we know best. Our technologies cover every component needed to build and support a complete end to end software solution.'
