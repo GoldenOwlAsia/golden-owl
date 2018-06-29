@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require bootstrap
-//= require_tree
-//= require bootstrap.min
 //= require slide_event
-//= fancy_scrolling
+//= require fancy_scrolling
+//= require_tree
