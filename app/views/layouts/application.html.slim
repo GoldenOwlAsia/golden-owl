@@ -11,10 +11,14 @@ html
     meta property='og:image' content='http://www.goldenowl.asia/assets/background-home.jpg'
     link rel="shortcut icon" type="image/x-icon" href="assets/logo-icon.png"/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => false
     = csrf_meta_tags
 
   body data-spy="scroll"
+    = yield
+    = render '/shared/header'
+    = render '/shared/sidebar'
+
+    = javascript_include_tag 'application', 'data-turbolinks-track' => false
     /! Load Facebook SDK for JavaScript
     #fb-root
     javascript:
@@ -27,8 +31,4 @@ html
         }(document, 'script', 'facebook-jssdk'));
     /! Your customer chat code
     .fb-customerchat attribution="setup_tool" page_id="#{fb_page_id}"
-    = render '/shared/header'
-    = render '/shared/sidebar'
-    = yield
-
     / script src='https://hammerjs.github.io/dist/hammer.min.js'
