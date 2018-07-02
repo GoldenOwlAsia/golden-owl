@@ -15,9 +15,6 @@ html
 
   body data-spy="scroll"
     = yield
-    = render '/shared/header'
-    = render '/shared/sidebar'
-
     = javascript_include_tag 'application', 'data-turbolinks-track' => false
     /! Load Facebook SDK for JavaScript
     #fb-root
