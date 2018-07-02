@@ -13,10 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require bootstrap
-//= require_tree
-//= require bootstrap.min
-//= require scrolloverflow
-//= require jquery.fullPage
-//= require slide_event
-//= require fullPage
+//= require fancy_scrolling

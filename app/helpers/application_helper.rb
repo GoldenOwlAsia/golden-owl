@@ -6,4 +6,12 @@ module ApplicationHelper
   def google_api_key
     Rails.application.secrets.google_api_key
   end
+
+  def portfolio_link
+    Rails.application.secrets.portfolio_link
+  end
+
+  def career_link
+    Rails.application.secrets.career_link
+  end
 end
