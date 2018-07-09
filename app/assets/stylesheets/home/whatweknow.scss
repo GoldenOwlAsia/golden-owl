@@ -1,12 +1,21 @@
 .whatweknow-container {
-  // min-height: 100vh;
   text-align: center;
-  background-color: $middle-gray;
-  
-  .container > section {
-    .content {
-      width: 33.333%;
-      font-size: 14px;
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  .image {
+    margin-bottom: 50px;
+  }
+}
+
+.whatweknow-container .technologies {
+  .row-1,
+  .row-2 {
+    .image {
+      height: 82px;
+      line-height: 82px;
     }
   }
 }

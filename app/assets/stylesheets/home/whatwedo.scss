@@ -1,5 +1,4 @@
 .whatwedo-container {
-  // min-height: 100vh;
   text-align: center;
   .fields {
     .row {
@@ -11,6 +10,23 @@
           }
         }
       }
+    }
+  }
+
+  .mouse {
+    position: relative;
+    top: calc(-33px - #{$header-height});
+    border: 1px #ffffff solid;
+    border-radius: 50%;
+    left: calc(50% - 33px);
+    height: 66px;
+    width: 66px;
+    padding: 19px 19px 3px;
+    background-color: #ffffff;
+
+    img {
+      width: 100%;
+      height: 100%
     }
   }
 }
