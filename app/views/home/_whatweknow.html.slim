@@ -10,21 +10,8 @@
     .technologies
       .row
         .col-md-10.col-md-offset-1
-          .col.col-md-3.col-sm-6
-            .image
-              img src='/assets/wwk-rails'
-          .col.col-md-3.col-sm-6
-            .image
-              img src='/assets/wwk-nodejs'
-          .col.col-md-3.col-sm-6
-            .image
-              img src='/assets/wwk-react'
-          .col.col-md-3.col-sm-6
-            .image
-              img src='/assets/wwk-laravel'
-          .col.col-md-3.col-sm-6
-            .image
-              img src='/assets/wwk-android'
-          .col.col-md-3.col-sm-6
-            .image
-              img src='/assets/wwk-ios'
+          - wwk_resources.each_with_index do |row, i|
+            div class="row-#{i}"
+              - row.each do |file_name|
+                .image.col-md-3.col-sm-6
+                  img src="/assets/#{file_name}"
