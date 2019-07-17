@@ -6,6 +6,6 @@ class ContactsMailer < ApplicationMailer
   #
   def contact_form_email(contact)
     @contact = contact
-    mail( to: "admin@goldenowl.asia", subject: 'New message from visitor')
+    mail( to: "claire@goldenowl.asia", subject: 'New message from visitor')
   end
 end
