@@ -1,0 +1,12 @@
+#home-container
+  .section.intro-container id='introduction'
+    section
+      .header
+        = t 'intro.title'
+    .intro-button
+      = link_to 'WHAT WE DO', '#whatwedo', class: 'btn'
+
+  = render '/home/amp/amp_whatwedo'
+  = render '/home/amp/amp_whatweknow'
+  = render '/home/amp/amp_aboutus'
+  = render '/home/amp/amp_contactus'
