@@ -114,7 +114,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     pg (0.18.4)
     public_suffix (2.0.5)
-    rack (1.6.10)
+    rack (1.6.12)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.7.1)
